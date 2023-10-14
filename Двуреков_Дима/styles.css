@@ -1,0 +1,33 @@
+.dima ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dima li {
+    display: inline;
+    margin-right: 10px;
+    position: relative;
+}
+
+.dima li a {
+    text-decoration: none;
+    color: #0b56ea;
+}
+
+.dima li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #0b56ea;
+    text-underline-offset: 2px;
+}
+
+.dima li:not(:last-child)::after {
+    content: ' > ';
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dima li:last-child {
+    color: #333;
+}
