@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        
+        .breadcrumbs {
+            display: inline-block;
+            background-color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .breadcrumbs ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .breadcrumbs li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .breadcrumbs li:not(:last-child)::after {
+            content: '>';
+            margin-left: 10px;
+            color: #0b56ea;
+        }
+        
+        .breadcrumbs li:last-child {
+            display: inline;
+        }
+        
+        .breadcrumbs li:last-child span {
+            color: #333;
+        }
+        
+        .breadcrumbs a {
+            text-decoration: none;
+            color: #0b56ea;
+        }
+        
+        .breadcrumbs a:hover {
+            border-bottom: 1px solid #0b56ea;
+        }
+    </style>
+</head>
+<body>
+    <div class="breadcrumbs">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Subcategory</a></li>
+            <li><span>Current Page</span></li>
+        </ul>
+    </div>
+</body>
+</html>
