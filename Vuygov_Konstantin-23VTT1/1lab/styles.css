@@ -1,0 +1,36 @@
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menubtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.menucontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+}
+
+.menucontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menucontent a:hover {
+    background-color: #ddd;
+}
+
+.menu:hover .menucontent {
+    display: block;
+}
