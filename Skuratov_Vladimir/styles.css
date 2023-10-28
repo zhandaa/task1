@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.nav-item {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    color: #333;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #ccc;
+}
+
+.active {
+    background-color: #d10953;
+    color: #fff;
+}
