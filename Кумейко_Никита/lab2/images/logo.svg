@@ -1,0 +1,9 @@
+<svg viewBox="0 0 100 100"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <circle cx="25" cy="25" r="23" stroke="black" stroke-width="3" fill-opacity="0%"/>
+    <circle cx="75" cy="75" r="23" stroke="black" stroke-width="3" fill-opacity="0%"/>
+    <rect x="50" y="3" width="48" height="48" stroke="black" stroke-width="3" fill-opacity="0%"/>
+    <rect x="3" y="50" width="48" height="48" stroke="black" stroke-width="3" fill-opacity="0%"/>
+</svg>
