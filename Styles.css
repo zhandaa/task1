@@ -1,0 +1,46 @@
+body {
+    background-color: #c3dcc3;
+}
+hr {
+    color: black;
+}
+span.bread {
+    color: #333;
+}
+
+a {
+    color: #0b56ea;
+    text-decoration: none;
+}
+a:visited {
+    color: #0b56ea;
+    text-decoration: none;
+}
+a:hover {
+    color: #0b56ea;
+    text-decoration: underline;
+}
+.bread li a:after {
+    display: inline-block;
+    padding-left: 5px;
+    color: black;
+    content: '>';
+}
+.bread li:last-child a:after {
+    content: none;
+}
+ul li {
+    display: inline;
+}
+button {
+    position: relative;
+    left: 45%;
+    right: 45%;
+    color: #c3dcc3;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    min-height: 40px;
+    min-width: 130px;
+    font-size: 25px;
+}
