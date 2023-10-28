@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.navigation {
+    text-align: center;
+}
+
+.navigation a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    color: #333;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #ccc;
+}
+
+.navigation .active {
+    background-color: #d10953;
+    color: #ffffff;
+}
