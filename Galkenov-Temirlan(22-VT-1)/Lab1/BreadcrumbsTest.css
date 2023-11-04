@@ -1,22 +1,22 @@
-body { /*Фон*/
+body { /*Г”Г®Г­*/
     background-color: bisque;
 }
-hr { /*Линия*/
+hr { /*Г‹ГЁГ­ГЁГї*/
     color: black;
 }
-span.bread { /*Последний элем Хлеб Крош*/
+span.bread { /*ГЏГ®Г±Г«ГҐГ¤Г­ГЁГ© ГЅГ«ГҐГ¬ Г•Г«ГҐГЎ ГЉГ°Г®Гё*/
     color: #333;
 }
 
-a { /*Ссылки Хлеб Крош в стат*/
+a { /*Г‘Г±Г»Г«ГЄГЁ Г•Г«ГҐГЎ ГЉГ°Г®Гё Гў Г±ГІГ ГІ*/
     color: #0b56ea;
     text-decoration: none;
 }
-a:visited { /*Ссылки Хлеб Крош при пос*/
+a:visited { /*Г‘Г±Г»Г«ГЄГЁ Г•Г«ГҐГЎ ГЉГ°Г®Гё ГЇГ°ГЁ ГЇГ®Г±*/
     color: #0b56ea;
     text-decoration: none;
 }
-a:hover { /*Ссылки Хлеб Крош при наведений*/
+a:hover { /*Г‘Г±Г»Г«ГЄГЁ Г•Г«ГҐГЎ ГЉГ°Г®Гё ГЇГ°ГЁ Г­Г ГўГҐГ¤ГҐГ­ГЁГ©*/
     color: #0b56ea;
     text-decoration: underline;
 }
