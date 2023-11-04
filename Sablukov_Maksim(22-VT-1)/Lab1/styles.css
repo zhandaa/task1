@@ -1,0 +1,50 @@
+.breadcrumbs {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: inline-block;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.breadcrumbs li {
+  margin-right: 20px;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 0px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #0b56ea;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li:not(:last-child)::after {
+  content: '>';
+  margin-left: 20px;
+  color: #000;
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+
+span {
+  color: #333;
+}
+
