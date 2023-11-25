@@ -1,0 +1,156 @@
+html {
+  font-size: 15px;
+}
+body {
+  margin: 0;
+  font-family: 'Times New Roman';
+  font-size: 1rem;
+  color: #2B2A2C;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* Block */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.header {
+  padding: 18px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user {
+  display: flex;
+}
+.user__avatar {
+  width: 57px;
+  height: 57px;
+}
+img {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+}
+.user__content {
+  padding-left: 9px;
+}
+.user__name {
+  margin-bottom: 3px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #2B2A2C;
+  font-weight: 700;
+}
+.user__prof {
+  font-size: 12px;
+  color: rgba(43, 42, 44, 0.7);
+}
+.nav {
+  display: flex;
+  height: 100%;
+}
+.nav__link {
+  padding: 10px;
+  font-size: 12px;
+  color: #2B2A2C;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+.nav__link:hover,
+.nav__link.active {
+  border-color: #2B2A2C;
+}
+.intro__inner {
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 120px;
+  position: relative;
+  border-bottom: 1px solid rgba(106, 105, 107, 0.3);
+}
+.intro__content {
+  width: 50%;
+}
+.intro__subtitle {
+  font-size: 17px;
+  color: #2B2A2C;
+  font-weight: 200;
+}
+.intro__title {
+  margin-bottom: 5px;
+  font-size: 45px;
+  color: #2B2A2C;
+  font-weight: 700;
+}
+.intro__text {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: rgba(43, 42, 44, 0.7);
+}
+.intro__photo {
+  width: 600px;
+  height: auto;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #888;
+  margin-top: -50px;
+}
+.social {
+  display: flex;
+  margin-bottom: 42px;
+}
+.social__link {
+  margin-right: 10px;
+  text-decoration: none;
+  transition: transform 0.2s linear;
+}
+.social__link:hover {
+  transform: translateY(-5px);
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 16px 18px;
+  min-width: 170px;
+  border: 1px solid #2B2A2C;
+  border-radius: 30px;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.1;
+  color: #2B2A2C;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  background-color: #2B2A2C;
+  color: #fff;
+}
+.btn + .btn {
+  margin-left: 15px;
+}

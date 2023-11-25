@@ -1,0 +1,320 @@
+body{
+    width: 100vw;
+    font-family: 'ILoveLOL', sans-serif;
+    letter-spacing: 1.6px;
+    line-height: 32px;
+
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20vh;
+    background: #FFE4C4;
+}
+header nav{
+
+    font-size: 16px;
+    display: flex;
+    width: 70vh;
+    justify-content: space-around;
+
+
+}
+header nav a{
+    text-decoration: none;
+    color: #000;
+
+
+}
+.oops{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 110px;
+    background: #FFEBCD;
+    height: 60vh;
+
+
+}
+.oops_img{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+    padding: 20px;
+}
+.oops_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: start;
+    margin-bottom: 10px;
+    height: 300px;
+
+}
+.oops_text h1{
+    font-weight: 500;
+    font-size: 50px;
+    margin: 10;
+    height: 60px;
+    color: #1c1414;
+    line-height: 60px;
+}
+.oops_text span{
+    font-size: 20px;
+    padding-top: 100px;
+    color: #695353;
+    line-height: 60px;
+}
+.oops_text a{
+    display: flex;
+    text-decoration: none;
+    padding: 20px;
+    color: #FFF;
+    background: #140b0b;
+    height: 65px;
+    width: 215px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.6px;
+    font-weight: 400;
+}
+.abt {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.abt-1{
+    font-weight: 600;
+    font-size: 50px;
+}
+.abt-2{
+    width: 540px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #856767;
+}
+.my-pluses{
+    display: flex;
+    justify-content: center;
+    background: #1c0b0b;
+    height: 250px;
+    align-items: center;
+    gap: 50px;
+}
+.plus{
+    color: #d4b4b4;
+    font-size: 30px;
+}
+.plus-elem{
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+.plus-img{
+    height: 80px;
+    width: 80px;
+}
+.plus-par{
+    font-size: 20px;
+    color: #FFF;
+    width: 71px;
+}
+.skills {
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.skills-list{
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+    height: 450px;
+    align-items: start;
+    justify-content: center;
+}
+.skills-list h1{
+    font-weight: 500;
+}
+.skills-list div p{
+    font-weight: 400;
+    color: #727272;
+}
+.pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+      padding: 20px;
+    width: 450px;
+    height: 450px;
+}
+.s1 {
+    width: 445px;
+    height: 4px;
+    background: #C4C4C4;
+}
+.s2 {
+    width: 60%;
+    height: 100%;
+    background: #4f1717;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 600px;
+    background: #EEEFF1;
+    align-items: center;
+}
+.work-text{
+    padding: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px
+}
+.work div p {
+    width: 540px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+.images{
+    width: 100vw;
+    height: 63vw;
+    background-color: #ffffff;
+}
+.img{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+    height: 50vw;
+}
+.img-elem img {
+
+    width:25vw;
+    height:25vw;
+
+}
+.microsoft_logo{
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+.microsoft_logo img{
+    height: 120px;
+    width: 255px;
+}
+.nothing{
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+}
+.website{
+    display: flex;
+    background: #d9c5c5;
+    width: 100vw;
+    height: 762px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.website-text{
+    color: #1c1414;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.website-text p{
+    margin: auto;
+    text-align: center;
+    width: 540px;
+    color: #727272;
+}
+.form_field{
+    border: none;
+}
+#form_name {
+
+    width: 255px;
+    height: 50px;
+}
+#form_email{
+    width: 255px;
+    height: 50px;
+}
+#form_message{
+
+    width: 540px;
+    height: 175px;
+}
+.wonna_website-form{
+    display: flex;
+    gap: 15px;
+    width: 540px;
+    flex-wrap: wrap;
+}
+.submit_button{
+    width: 190px;
+    height: 55px;
+    background:#1c1414;;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.contactLogos {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    gap: 20px;
+
+}
+.contactLogos > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height: 100px;
+    object-fit: contain;
+}
+.contactLogos img{
+    width:100%;
+}
+.FIO{
+  text-align: center;
+}
+.year{
+  text-align: center;
+}
+.Relax{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vw;
+}
