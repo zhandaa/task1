@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    margin: 0;
+    font-family: Roboto sans-serif;}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.физра {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
