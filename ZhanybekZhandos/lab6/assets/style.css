@@ -2,10 +2,6 @@ body {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
 .header__wrapper {
   background: #EEEFF1;
   padding-bottom: 100px;
@@ -73,11 +69,41 @@ body {
   text-decoration: none;
   color: white;
   background-color: #34547A;
-  width:225px;
-  height:65px;
+  width: fit-content;
+  padding: 5px 10px;
+  min-height:45px;
   transition: transform .2s ease-in-out;
+  border:none;
+  transition: all .4s ease;
 }
 .button:hover {
-  transform: scale(110%);
+  color: #34547A;
+  background-color:  white;
+  box-shadow: 0px 2px 5px 2px rgba(34, 60, 80, 0.2);
   
+}
+footer {
+  background-color: #34547A;
+  color: white;
+  padding: 50px 0;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__content p {
+  margin-bottom: 0;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  min-height: 45px;
+  gap: 20px;
 }
