@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Резюме программиста</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+  <header class="text-center">
+    <!-- Анимация мигания заголовка "Резюме" -->
+    <h1 class="animate__animated animate__flash">Резюме</h1>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Левая часть -->
+      <div id="left" class="col-md-6">
+        <!-- Анимированное изображение -->
+        <img class="animate__animated animate__rotateIn" src="Resume_image.jpeg" alt="avatar of a man" class="img-fluid">
+        <!-- Ваша информация -->
+        <h2 id="name">Айдарханов <br>Амир</h2>
+        <h3 id="jobTitle">Веб-дизайнер; Звукорежиссер</h3>
+        <hr>
+        <div>
+          <h3>Контакты</h3>
+          <h4>Адрес:</h4>
+          <p>Усть-Каменогорск,<br><br>Казахстан</p>
+          <h4>Email:</h4>
+          <p>flyteloner@gmail.com</p>
+          <h4>Телефон:</h4>
+          <p>+7 566 659 9856</p>
+        </div>
+        <h3>Личные качества:</h3>
+        <p>
+          - Ответственность и пунктуальность в выполнении задач.<br>
+          - Способность к самостоятельному обучению и постоянному развитию.
+        </p>
+        <p>
+          Я готов приступить к работе над проектами веб-программирования на фрилансе, применяя свои знания и опыт для достижения качественных результатов.
+        </p>
+      </div>
+      
+      <!-- Правая часть -->
+      <div id="right" class="col-md-6">
+        <!-- Анимация для таблицы с опытом работы -->
+        <hr>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Опыт работы:</th>
+                <th>Место работы</th>
+                <th>Должность</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Сервисный центр "A-Soft"</td>
+                <td>Технический специалист</td>
+              </tr>
+              <!-- ... добавьте другие строки таблицы ... -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подключение Bootstrap JS (необходимо для некоторых функций Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Анимация заголовка "Резюме"
+      anime({
+        targets: '.animate__flash',
+        loop: true,
+        duration: 1000,
+        easing: 'easeInOutExpo'
+      });
+
+      // Анимация вращения изображения
+      anime({
+        targets: '.animate__rotateIn',
+        loop: true,
+        rotate: '1turn',
+        duration: 2000,
+        easing: 'linear'
+      });
+
+      // Анимация выхода изображения справа
+      anime({
+        targets: '.animate__slideInRight',
+        translateX: [-500, 0],
+        duration: 1000,
+        easing: 'easeOutQuad'
+      });
+    });
+  </script>
+</body>
+</html>

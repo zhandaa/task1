@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Резюме программиста</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src = "anime.js"></script>
+  <script>anime({
+    targets: '.dom-attribute-demo input',
+    value: [0, 1000],
+    round: 1,
+    easing: 'easeInOutExpo'
+  });
+  </script>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    #left img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 375px) {
+      #left, #right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="text-center">
+    <h1>Резюме</h1>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div id="left" class="col-sm-12 col-md-6">
+        <img src="Resume_image.jpeg" alt="avatar of a man" class="img-fluid">
+        <h2 id="name">Айдарханов <br>Амир</h2>
+        <h3 id="jobTitle">Веб-дизайнер; Звукорежиссер</h3>
+        <hr>
+        <div>
+          <h3>Контакты</h3>
+          <h4>Адрес:</h4>
+          <p>Усть-Каменогорск,<br><br>Казахстан</p>
+          <h4>Email:</h4>
+          <p>flyteloner@gmail.com</p>
+          <h4>Телефон:</h4>
+          <p>+7 566 659 9856</p>
+        </div>
+        <h3>Личные качества:</h3>
+        <p>
+          - Ответственность и пунктуальность в выполнении задач.<br>
+          - Способность к самостоятельному обучению и постоянному развитию.
+        </p>
+        <p>
+          Я готов приступить к работе над проектами веб-программирования на фрилансе, применяя свои знания и опыт для достижения качественных результатов.
+        </p>
+      </div>
+
+      <div id="right" class="col-sm-12 col-md-6">
+        <h3>Опыт работы:</h3>
+        <hr>
+        <h4>Опыт работы:</h4>
+
+        <h3>Образование:</h3>
+        <hr>
+        <h4>Место работы: Сервисный центр "A-Soft"</h4>
+        <hr>
+        <h4>Должность: Технический специалист</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подключение Bootstrap JS (необходимо для некоторых функций Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
