@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body> 
+    <h1>1</h1>
+        <img src="Screenshot_1.png">
+    <pre>
+       
+            console.log('Hello, World!');
+       
+    </pre>
+
+    <h1>2</h1>
+        <img src="Screenshot_2.png">
+    <pre>
+        
+            console.log('Robert');
+            console.log('Stannis');
+            console.log('Renly');
+        
+    </pre>
+
+    <h1>3</h1>
+        <img src="Screenshot_3.png">
+    <pre>
+       
+            console.log((3**5));               
+            console.log(-8 / -4);                       
+            console.log(100 % 3);                     
+            console.log((3**5) + (-8 / -4) + (100 % 3)); 
+        
+    </pre>
+
+     <h1>4</h1>
+        <img src="Screenshot_4.png">
+     <pre>
+        
+            console.log(3 ** (4 - 2));!
+     
+    </pre>
+
+     <h1>5</h1>
+        <img src="Screenshot_5.png">
+     <pre>
+      
+            console.log('- Did Joffrey agree?\n- He did. He also said "I love using \\n".');
+      
+    </pre>
+
+    <h1>6</h1>
+    <img src="Screenshot_6.png">
+    <pre>
+       
+            let family = 'Targaryen';
+            let pet = 'Dragon';
+            console.log(family);
+            console.log('and');
+            console.log(pet);
+   
+    </pre>
+
+    <h1>7</h1>
+    <img src="Screenshot_7.png">
+    <pre>
+       
+            const eurosCount = 100;
+            const dollars = 100*1.25;
+            console.log(dollars);
+            const rubles = dollars * 60;
+            console.log(rubles);
+    
+    </pre>
+    
+    <h1>8</h1>
+    <img src="Screenshot_8.png">
+    <pre>
+         
+            const king = 'King Balon the 6th';
+            const floor = 6;
+            const roomPerFloor = 17;
+            console.log(king + ' has ' + (floor* roomPerFloor) + ' rooms.');
+       
+    </pre>
+    
+    <h1>9</h1>
+    <img src="Screenshot_9.png">
+    <pre>
+        const stark = 'Arya';
+        console.log(`Do you want to eat, ${stark}?`);
+    </pre>
+
+    <h1>10</h1>
+    <img src="Screenshot_10.png">
+    <pre>
+        const word = 'Na\nharis';
+        console.log(word[7]);
+    </pre>
+
+    <h1>11</h1>
+    <img src="Screenshot_11.png">
+    <pre>
+        console.log(-0.304);
+    </pre>
+
+    <h1>12</h1>
+    <img src="Screenshot_12.png">
+    <pre>
+        const one = 'Naharis';
+        const two = 'Mormont';
+        const three = 'Sand';
+        const result = `${one[2]}${two[1]}${three[3]}${two[4]}${two[2]}`;
+        console.log(result);
+    </pre>
+
+    <h1>13</h1>
+    <img src="Screenshot_13.png">
+    <pre>    
+        const fruitsCount = -2309;
+        console.log(Math.abs(fruitsCount)); 
+    </pre>
+
+    <h1>14</h1>
+    <img src="Screenshot_14.png">
+    <pre>    
+        const number = 923.2238;
+        console.log(Math.ceil(number));        
+    </pre>
+
+    <h1>15</h1>
+    <img src="Screenshot_15.png">
+    <pre>    
+        import length from './src/string.js';
+        const text = 'Never forget what you are, for surely the world will not';
+        const firstLetter = text[0];
+        const lastLetter = text[text.length - 1];
+        console.log(`First: ${firstLetter}`);
+        console.log(`Last: ${lastLetter}`);        
+    </pre>
+
+    <h1>16</h1>
+    <img src="Screenshot_16.png">
+    <pre>    
+        const numbers = [3, 10, 22, -3, 0];
+        const minValue = Math.min(...numbers);
+        console.log(`${minValue}`);
+    </pre>
+
+    <h1>17</h1>
+    <img src="Screenshot_17.png">
+    <pre>    
+        console.log(Math.floor(Math.random() * 11));
+
+    </pre>
+
+    <h1>18</h1>
+    <img src="Screenshot_18.png">
+    <pre>    
+        const motto = 'Family, Duty, Honor';
+        console.log(typeof motto); 
+    </pre>
+
+    <h1>19</h1>
+    <img src="Screenshot_19.png">
+    <pre>    
+        let firstName = '  Grigor   \n';
+        firstName = firstName.trim();
+        console.log(firstName); 
+    </pre>
+
+    <h1>20</h1>
+    <img src="Screenshot_20.png">
+    <pre>    
+        const text = 'When you play a game of thrones you win or you die.';
+        console.log(text.slice(4, 12).replace('you', 'someone').length);
+    </pre>
+
+    <h1>21</h1>
+    <img src="Screenshot_21.png">
+    <pre>    
+        const printMotto = () => {
+            console.log('Winter is coming');
+          };
+          
+          export default printMotto;          
+    </pre>  
+
+    <h1>22</h1>
+    <img src="Screenshot_22.png">
+    <pre>    
+        const sayHurrayThreeTimes = () => {
+            return 'hurray! hurray! hurray!';
+        };
+        const hurray = sayHurrayThreeTimes();
+        console.log(hurray); 
+        export default sayHurrayThreeTimes;           
+    </pre>
+
+    <h1>23</h1>
+    <img src="Screenshot_23.png">
+    <pre>    
+        const truncate = (text, length) => {
+            if (text.length <= length) {
+              return text;
+            }
+          
+            return text.slice(0, length) + '...';
+          };
+          
+          export default truncate;                   
+    </pre>
+
+    <h1>24</h1>
+    <img src="Screenshot_24.png">
+    <pre>    
+        const getHiddenCard = (creditCardNumber, starsCount = 4) => {
+        const hiddenPart = '*'.repeat(starsCount);
+        const lastDigits = creditCardNumber.slice(-4);
+        return hiddenPart + lastDigits;
+        };
+        export default getHiddenCard;
+      
+    </pre>
+
+    <h1>25</h1>
+    <img src="Screenshot_25.png">
+    <pre>    
+        const capitalize = (str) => {
+            if (str.length === 0) {
+              return '';
+            }
+            return str[0].toUpperCase() + str.slice(1);
+          };
+          
+          export default capitalize;      
+    </pre>
+
+    <h1>26</h1>
+    <img src="Screenshot_26.png">
+    <pre>    
+        const isInternationalPhone = (phoneNumber) => {
+            return phoneNumber.startsWith('+');
+          };
+          
+          console.log(isInternationalPhone('89602223423')); 
+          console.log(isInternationalPhone('+79602223423')); 
+          
+          export default isInternationalPhone;              
+    </pre>
+    
+    <h1>27</h1>
+    <img src="Screenshot_27.png">
+    <pre>    
+        const isLeapYear = (year) => {
+            return (year % 400 === 0) || ((year % 4 === 0) && (year % 100 !== 0));
+          };
+          
+          export default isLeapYear;        
+    </pre>
+
+    <h1>28</h1>
+    <img src="Screenshot_28.png">
+    <pre>    
+        const getLetter = (str, num) => {
+            if (num >= 1 && num <= str.length) {
+              return str[num - 1];
+            } else {
+              return '';
+            }
+          };
+          
+          export default getLetter;
+                           
+    </pre>
+    
+    <h1>29</h1>
+    <img src="Screenshot_29.png">
+    <pre>    
+        const normalizeUrl = (url) => {
+            if (url.startsWith("https://")) {
+              return url;
+            } else {
+              return "https://" + url;
+            }
+          };
+          
+          export default normalizeUrl;                  
+    </pre>
+
+    <h1>30</h1>
+    <img src="Screenshot_30.png">
+    <pre>    
+        const convertText = (input) => {
+            if (input === '') {
+              return '';
+            }
+          
+            if (input[0] === input[0].toUpperCase()) {
+              return input;
+            } else {
+              return input.split('').reverse().join('');
+            }
+          };
+          
+          export default convertText;                       
+    </pre>
+
+    <h1>31</h1>
+    <img src="Screenshot_31.png">
+    <pre>    
+        const getNumberExplanation = (number) => {
+            switch (number) {
+              case 666:
+                return 'devil number';
+              case 42:
+                return 'answer for everything';
+              case 7:
+                return 'prime number';
+              default:
+                return 'just a number';
+            }
+          };
+          
+          export default getNumberExplanation;                             
+    </pre>
+    
+    <h1>32</h1>
+    <img src="Screenshot_32.png">
+    <pre>    
+        const printNumbers = (initialNumber) => {
+            for (let i = initialNumber; i >= 1; i--) {
+              console.log(i);
+            }
+            console.log('finished!');
+          };
+          
+          export default printNumbers;
+          
+          export default getNumberExplanation;                             
+    </pre>
+
+    <h1>33</h1>
+    <img src="Screenshot_33.png">
+    <pre>    
+        const joinNumbersFromRange = (start, finish) => {
+            let result = '';
+            let i = start;
+            while (i <= finish) {
+              result += i;
+              i += 1;
+            }
+            return result;
+          };
+          
+          export default joinNumbersFromRange;                        
+    </pre>
+
+    <h1>34</h1>
+    <img src="Screenshot_34.png">
+    <pre>    
+        const mySubstr = (str, length) => {
+            let result = '';
+            for (let i = 0; i < length; i++) {
+              result += str[i];
+            }
+            return result;
+          };
+          
+          export default mySubstr;
+    </pre>
+
+    <h1>35</h1>
+    <img src="Screenshot_35.png">
+    <pre>    
+        const countChars = (sentence, char) => {
+            const lowerCaseSentence = sentence.toLowerCase();
+            const lowerCaseChar = char.toLowerCase();
+            let count = 0;
+          
+            for (let i = 0; i < lowerCaseSentence.length; i++) {
+              if (lowerCaseSentence[i] === lowerCaseChar) {
+                count += 1;
+              }
+            }
+          
+            return count;
+          };
+          
+          export default countChars;
+    </pre>
+
+    <h1>36</h1>
+    <img src="Screenshot_36.png">
+    <pre>    
+        const makeItFunny = (text, n) => {
+            let result = '';
+            for (let i = 0; i < text.length; i++) {
+              if ((i + 1) % n === 0) {
+                result += text[i].toUpperCase();
+              } else {
+                result += text[i];
+              }
+            }
+            return result;
+          };
+          
+          export default makeItFunny;
+    </pre>
+
+    <h1>37</h1>
+    <img src="Screenshot_37.png">
+    <pre>    
+        const encrypt = (message) => {
+            let result = '';
+          
+            for (let i = 0; i < message.length - 1; i += 2) {
+              result += message[i + 1] + message[i];
+            }
+          
+            if (message.length % 2 !== 0) {
+              result += message[message.length - 1];
+            }
+          
+            return result;
+          };
+          
+          export default encrypt;
+    </pre>
+
+    <h1>38</h1>
+    <img src="Screenshot_38.png">
+    <pre>    
+        // myMathModule.js
+
+        export const getTriangleArea = (h, b) => 0.5 * h * b;
+
+        // solution.js
+
+        import { getTriangleArea } from './myMathModule';
+
+        const square = (n) => n * n;
+
+        const calculateTriangleArea = (n) => {
+        const base = square(n) / 2;
+        const height = n;
+        return getTriangleArea(height, base);
+        };
+
+        export default calculateTriangleArea;
+    </pre>
+
+
+    <img src="Screenshot_39.png">
+
+</body>
+<!-- &lt;/script&gt; -->
+</html>

@@ -1,0 +1,108 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    background: #eee;
+}
+nav a:hover {
+    color: dimgrey;
+    text-decoration: underline;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    min-width: fit-content(200px);
+}
+
+
+.intro {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 300px;
+    min-height: 400px;
+}
+.intro_text {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 600px;
+}
+.intro_text * {
+    background-color: #eee;
+    width: fit-content;
+}
+.intro_btn {
+    padding: 10px;
+    color: #eeeeee;
+    background-color: #333;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+}
+.intro_btn:hover {
+    color: #ccc;
+    background-color: #555;
+    text-decoration: underline;
+}
+
+#about {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px;
+}
+#about div {
+    max-width: 500px;
+}
+
+.projects {
+    display:flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin: 0 15%;
+    color: white;
+}
+.projects_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 170px;
+}
+.projects img {
+    height: 60px;
+    width: 50px;
+}
+.projects div {}
+
+.polka {
+    background-image:
+            radial-gradient(#ccc 20%, transparent 18%),
+            radial-gradient(#ccc 20%, transparent 18%);
+    background-position: 10px 10px, 30px 30px;
+    background-size: 40px 40px;
+    background-color: rgb(255, 255, 255);
+}
+.rev_polka {
+    background-image:
+            radial-gradient(#111 20%, transparent 18%),
+            radial-gradient(#111 20%, transparent 18%);
+    background-position: 10px 10px, 30px 30px;
+    background-size: 40px 40px;
+    background-color: #333;
+}
