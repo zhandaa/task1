@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="animate.min.css">
 </head>
 <body>
 <header>
@@ -32,10 +33,10 @@
 <div class="about_me">
     <div class="container main-cont">
         <div class="row flex-column flex-sm-row" >
-            <div class="col about_me_img_col">
+            <div class="col about_me_img_col animate__animated animate__bounceInLeft">
                 <div class="img_cont"><img class="about_me_img" src="assets/1.png"></div>
             </div>
-            <div class="col">
+            <div class="col animate__animated animate__bounceInRight">
                 <h1 style="text-align: center">Backend Developer</h1>
                 <div class="container">
                     <div class="row flex-column txt" style="align-items: center">
@@ -160,6 +161,30 @@
         delay: 500,
         easing: 'easeInOutExpo'
 
+    })
+    anime({
+        targets: '.anim1',
+        translateX: -1000,
+        duration: 0,
+        easing: 'linear'
+    })
+    anime({
+        targets: '.anim1',
+        translateX: 0,
+        duration: 500,
+        easing: 'easeOutExpo'
+    })
+    anime({
+        targets: '.anim2',
+        translateX: 1000,
+        duration: 0,
+        easing: 'linear'
+    })
+    anime({
+        targets: '.anim2',
+        translateX: 0,
+        duration: 500,
+        easing: 'easeOutExpo'
     })
 </script>
 </body>
