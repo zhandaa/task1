@@ -1,0 +1,128 @@
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #987DFA;
+    font-family: Roboto, sans-serif;
+}
+@media screen and (max-width: 576px){
+    body{
+        width: 200vw;
+    }
+
+}
+header{
+    background: #7d64d9;
+    width: 100%;
+}
+footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    background: #7d64d9;
+    margin-top: 10px ;
+    padding: 20px;
+}
+main{
+
+    margin: 10px 0 0 10px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+
+}
+.head{
+
+    align-items: center;
+    height: 10vh;
+    background: #7d64d9;
+}
+.head_col{
+
+    text-align: center;
+}
+.head_col_logo{
+    text-align: center;
+}
+.about_me_img{
+    width: 70%;
+
+}
+.about_me{
+    margin: 10px 0 0 10px;
+}
+.about_me_img_col{
+    align-items: end;
+    text-align: center;
+}
+.ssilka{
+    text-decoration: none;
+    color: black;
+}
+.txt{
+
+    text-align: justify;
+}
+.forma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.form_fielda{
+    border: none;
+
+}
+#form_namea {
+
+    width: 255px;
+    height: 50px;
+}
+#form_emaila{
+    width: 255px;
+    height: 50px;
+}
+#form_messagea{
+
+    width: 525px;
+    height: 175px;
+}
+.wonna_website-forma{
+    display: flex;
+    gap: 15px;
+    width: 540px;
+    flex-wrap: wrap;
+
+}
+.submit_buttona{
+    width: 190px;
+    height: 55px;
+    background: #7d64d9;
+    color: #000000;
+    border: none;
+    outline: none;
+}
+.main-cont{
+    margin: 10px 0;
+}
+
+.logos img{
+    width: 100%;
+    height: 100%
+}
+.anime_block1 {
+    width: 50px;
+    height: 50px;
+    background: yellowgreen;
+}
+.anime_block2 {
+    width: 50px;
+    height: 50px;
+    background: yellowgreen;
+}
