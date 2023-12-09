@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Многоуровневая навигация</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="anime.min.js"></script>
+</head>
+<body>
+<ul>
+    <li><a href="#" class="backgroundOrange">У САМУРАЯ</a></li>
+    <li>
+        <a href="#" class="backgroundBlack">Суши</a>
+        <ul class="undeground">
+            <li><a href="#">Филодельфия</a></li>
+            <li><a href="#">Цезарь-темпура</a></li>
+            <li><a href="#">Калифорния</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="backgroundOrange">Напитки</a>
+        <ul class="undeground">
+            <li><a href="#">Чай</a></li>
+            <li><a href="#">Pepsi</a></li>
+            <li><a href="#">Мохито</a></li>
+        </ul>
+    </li>
+</ul>
+<button id='runaway-btn'>скушай меня &#127843;</button>
+<script>
+    const button = document.getElementById("runaway-btn");
+
+    const animateMove = (element, prop, pixels) =>
+        anime({
+            targets: element,
+            [prop]: `${pixels}px`,
+            easing: "easeOutCirc"
+        });
+
+    ["mouseover", "click"].forEach(function (el) {
+        button.addEventListener(el, function (event) {
+            const top = getRandomNumber(window.innerHeight - this.offsetHeight);
+            const left = getRandomNumber(window.innerWidth - this.offsetWidth);
+
+            animateMove(this, "left", left).play();
+            animateMove(this, "top", top).play();
+        });
+    });
+    function getRandomNumber(max) {
+        return Math.floor(Math.random() * max);
+    }
+</script>
+</body>
+</html>
