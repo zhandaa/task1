@@ -1,0 +1,41 @@
+// main: ../style.less
+
+.contact {
+    display: flex;
+    justify-content: center; 
+}
+
+.contact__left {
+    width: 100%; 
+    max-width: 400px; //
+    padding: 2rem;
+    text-align: center; 
+}
+
+.contact__info {
+    margin: 2rem 0 3rem;
+    padding: 0;
+    list-style: none;
+    font-size: .94rem;
+    color: @black; 
+    font-weight: 300;
+}
+
+.contact__info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: .75rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact__info-icon {
+    margin-right: .75rem;
+}
+
+.contact__img {
+    width: 256px;
+    height: 256px;
+}
