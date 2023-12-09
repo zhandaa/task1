@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+
+body {
+	margin:0px;
+	padding:0px;
+	background-attachment: scroll;
+	background-image: url(../images/background.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 100%;
+	
+}
+
+#content_container {
+	margin-left:auto;
+	margin-right:auto;
+	width:900px;
+	height: 750px;
+	background-attachment: scroll;
+	background-image: url(../images/1223\ —\ копия.png);
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+
+#logo_container {
+	height:90px;
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(../images/01.png);
+}
+
+#main_container {
+	height:90px;
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#logo_image {
+	width:255px;
+	height:75px;
+	margin-left:10px;
+	margin-top:15px;
+	float:left;
+
+}
+
+#top_bar_black {
+	width:100%;
+	height:90px;
+	background-color:#000000;
+}
+
+#bottom_bar_black {
+	width:100%;
+	height:160px;
+	background-color:#000000;
+	flex: 0 0 auto;
+}
+
+#nav_block {
+	width: 400px;
+	height:90px;
+	float:right;
+}
+
+
+.nav_button {
+	width: 70px; 
+	color:#FFFFFF;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin-left:5px;
+	margin-top:35px;
+	text-align:center;
+	float:left;
+}
+
+
+.nav_button:link {
+	text-decoration:none;
+}
+
+.nav_button:hover {
+	text-decoration:none;
+	background-color:#333333;
+}
+
+#header {
+	width:500px;
+	margin-top:100px;
+	margin-bottom:250px;
+	float: left;
+	
+}
+
+
+
+.header_content_mainline {
+	font-size:35px;
+	color:#000000;
+	width:500px;
+	font-style: italic;
+}
+
+#header_content_boxline {
+	font-size:35px;
+	color:#000000;
+	width:400px;
+	font-style: italic;
+}
+
+#header_content_lowerline {
+	font-size:35px;
+	color:#FFFFFF;
+	width:400px;
+	font-style: italic;
+}
+
+#header_content_boxcontent {
+	font-size:15px;
+	color:#333333;
+	width:400px;
+	font-style: italic;
+}
+
+#header_content_lowerboxcontent {
+	font-size:12px;
+	color:#CCCCCC;
+	width:400px;
+}
+
+#header_content_tagline {
+	font-size:12px;
+	color:#333333;
+	width:500px;
+}
+
+#header_lower {
+	width:400px;
+	float:left;
+	margin-right:40px;
+	flex: 1 1 auto;
+}
+
+
+
+#copywriteblock {
+	margin-left:auto;
+	margin-right:auto;
+	width: 900px;
+	color:#333333;
+	font-size:10px;
+	margin-top:10px;
+	text-align:right;
+	text-decoration:none;
+	margin-bottom:10px;
+}

@@ -1,0 +1,10 @@
+<svg viewBox="0 0 1600 900"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g style="fill: rgba(0,0,0,0);"/>
+    <rect x="5%" y="5%" height="85%" width="90%" fill="#aaa" rx="60px"/>
+    <rect x="6%" y="7%" height="81%" width="88%" fill="#888" rx="55px"/>
+    <polygon points="0,765 1600,765 1570,837 30,837" fill="#aaa"/>
+    <polygon points="1570,837 30,837 100,900 1500,900" fill="#999"/>
+
+</svg>

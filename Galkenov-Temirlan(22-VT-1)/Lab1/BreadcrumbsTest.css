@@ -1,0 +1,46 @@
+body { /*Ôîí*/
+    background-color: bisque;
+}
+hr { /*Ëèíèÿ*/
+    color: black;
+}
+span.bread { /*Ïîñëåäíèé ýëåì Õëåá Êðîø*/
+    color: #333;
+}
+
+a { /*Ññûëêè Õëåá Êðîø â ñòàò*/
+    color: #0b56ea;
+    text-decoration: none;
+}
+a:visited { /*Ññûëêè Õëåá Êðîø ïðè ïîñ*/
+    color: #0b56ea;
+    text-decoration: none;
+}
+a:hover { /*Ññûëêè Õëåá Êðîø ïðè íàâåäåíèé*/
+    color: #0b56ea;
+    text-decoration: underline;
+}
+.bread li a:after {
+    display: inline-block;
+    padding-left: 5px;
+    color: black;
+    content: '>';
+}
+.bread li:last-child a:after {
+    content: none;
+}
+ul li {
+    display: inline;
+}
+button {
+    position: relative;
+    left: 45%;
+    right: 45%;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    min-height: 40px;
+    min-width: 130px;
+    font-size: 25px;
+}
