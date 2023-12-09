@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin:0 auto;
+    font-family:Roboto sans-serif ;
+}
+   header {
+        padding: 2% 0;
+        font-size: 16px;
+        font-weight: 400;
+    }
+   .header {
+    display: flex;
+    flex-direction: row;
+}
+    .logo {
+        align-items: center;
+    }
+    .logo img {
+        width: 25%;
+        height: auto;
+    }
+    .nav-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .nav-block_item {
+        display: inline;
+        vertical-align: middle;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        background: lightgray;
+        border-radius: 10px;
+    }
+    .nav-block_item:hover {
+        color: #007bff;
+    }
+    .main-section {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5%;
+        padding-top:5%;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    .descriptionText h1 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+    .main-section_descr p {
+        font-size: 18px;
+    }
+    .main-section__btn {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    .main-section__btn:hover {
+        background-color: #0056b3;
+    }
+.aboutme-section {
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutme-section_content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+    .aboutme-section_content h2, .aboutme-section_content p{
+        text-align: center;
+    }
+    .навыки_фото {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .навыки {
+        text-align: left;
+    }
+    .me\.png {
+        border-radius: 60px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .aboutme-section_content p {
+        font-size: 18px;
+    }
+    .навыки h2 {
+        margin-top: 20px;
+        align-items: center;
+    }
+    .work-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 5%;
+        padding-top:5%;
+        margin: 0 auto;
+    }
+    .dog\.png{
+        max-width: 100%;
+        height: auto;
+        border-radius: 100px;
+    }
+    .sport-section {
+        display: flex;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+        iframe {
+            width: 100%;
+            height: 315px;
+            margin: 0 auto;
+        }
+.sport-section_content{
+    margin: 0 auto;
+}
+
+
+
