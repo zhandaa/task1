@@ -1,0 +1,23 @@
+tfoot table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+thead {
+  font-weight: bold;
+  background-color: grey;
+}
+
+tfoot {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
+
+tfoot td:last-child {
+  text-align: right;
+}

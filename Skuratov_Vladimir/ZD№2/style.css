@@ -1,0 +1,92 @@
+/* Добавляем немного стиля, вдохновленного Джимми Нейтроном */
+
+/* Общие стили */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Стили для навигационной панели */
+/* Общий стиль для навигационного меню */
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стиль для каждого пункта меню */
+.nav-item {
+    margin-right: 15px; /* Расстояние между пунктами меню */
+}
+
+/* Стиль для ссылок внутри пункта меню */
+.nav-link {
+    text-decoration: none;
+    color: #333; /* Цвет текста */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+/* Стиль для ссылок при наведении */
+.nav-link:hover {
+    color: #007bff; /* Измененный цвет при наведении */
+}
+
+
+/* Стили для секции "О себе" */
+#about {
+    background-color: #ffc72c;
+    padding: 50px 0;
+}
+
+.display-4 {
+    color: #004080;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 15px;
+}
+
+h2 {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.lead {
+    color: #004080;
+}
+
+/* Стили для секции "Портфолио" */
+#portfolio {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+}
+
+.display-4 {
+    color: #004080;
+    font-family: 'Arial Black', sans-serif;
+}
+
+/* Стили для секции "Контакты" */
+#contact {
+    background-color: #004080;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.form-group label {
+    color: #ffffff;
+}
+
+.form-control {
+    border-color: #ffffff;
+    color: #495057;
+}
+
+.btn-primary {
+    background-color: #ffc72c;
+    border-color: #ffc72c;
+}
+
+.btn-primary:hover {
+    background-color: #e6b800;
+    border-color: #e6b800;
+}
