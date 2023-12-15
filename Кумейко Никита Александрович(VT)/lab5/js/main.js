@@ -14,6 +14,7 @@ function updateForm() {
     ta.style.height = "1px";
     ta.style.height = (25+ta.scrollHeight)+"px";
 }
+let mutexes = [true, true, true,true,true];
 window.addEventListener("load", () => {
     document.getElementById("len").addEventListener('change', updateForm);
     document.getElementById("uppercase").addEventListener('change', updateForm);
@@ -22,13 +23,16 @@ window.addEventListener("load", () => {
     const anims = [[-100, 0], [-100, -100], [0,-100], [100,-100], [100, 0]]
     for (let i = 0; i < 5; i++) {
         listItems[i].addEventListener("mouseover", event => {
-            anime({
-                targets: listItems[i],
-                translateX: anims[i][0],
-                translateY: anims[i][1],
-                direction: "alternate",
-                easing: "easeInOutSine"
-            });
+            if (mutexes[i])
+                anime({
+                    targets: listItems[i],
+                    translateX: anims[i][0],
+                    translateY: anims[i][1],
+                    direction: "alternate",
+                    easing: "easeInOutSine",
+                    begin: () => { mutexes[i] = false },
+                    complete: () => { mutexes[i] = true }
+                });
         });
     }
     const btn = document.getElementById("btn");
