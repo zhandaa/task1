@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Everything's wrong</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <script src="js/anime.js" type="module"></script>
+<!--        <link rel="stylesheet" href="styles/normalize.css">-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    </head>
+    <body>
+    <script src="js/main.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-sm polka bg-body">
+        <div class="container">
+            <img class="navbar_logo" src="images/logo.svg" height="50px" alt="logo"/>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon img-thumbnail" ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu"> <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#this" class="nav-link">this</a></li> <!--TODO-->
+                <li class="nav-item"><a href="#that" class="nav-link">that</a></li>
+                <li class="nav-item"><a href="#third" class="nav-link">third</a></li>
+                <li class="nav-item"><a href="#last" class="nav-link">last</a></li>
+            </ul></div>
+        </div>
+    </nav>
+
+    <section class="polka p-4 text-center" id="this">
+        <div class="container">
+            <div class="d-sm-flex">
+                <img src="images/computer.svg" class="img-fluid w-100 mx-5" alt="computer" style="max-width: 200px;">
+                <div class="w-100 intro_text text-center text-sm-start">
+                    <h3 class="m-auto m-sm-0">Lorem Ipsum</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel erat sed lacus fringilla vehicula. Ut posuere quis odio non iaculis. Integer sodales rutrum euismod. </p>
+                    <button class="btn btn-lg btn-dark" id="btn">Weird button</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center my-5" id="that">
+        <div class="container w-100" style="min-width: 400px; max-width: 700px">
+            <h3>About this page</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel erat sed lacus fringilla vehicula. Ut posuere quis odio non iaculis. Integer sodales rutrum euismod. Aliquam auctor sed felis porttitor bibendum.</p>
+        </div>
+    </section>
+
+    <section class="rev_polka">
+        <div class="container projects m-auto"><div class="row py-5 flex-nowrap overflow-auto ">
+            <div class="col-auto projects_item" id="l0">
+                <img src="images/Group.png" alt="group">
+                <div class="px-4">
+                    <h4>x+</h4>
+                    <p>lorem ipsums</p>
+                </div>
+            </div>
+            <div class="col-auto projects_item" id="l1">
+                <img src="images/Group.png" alt="group">
+                <div class="px-4">
+                    <h4>x+</h4>
+                    <p>lorem ipsums</p>
+                </div>
+            </div>
+            <div class="col-auto projects_item" id="l2">
+                <img src="images/Group.png" alt="group">
+                <div class="px-4">
+                    <h4>x+</h4>
+                    <p>lorem ipsums</p>
+                </div>
+            </div>
+            <div class="col-auto projects_item" id="l3">
+                <img src="images/Group.png" alt="group">
+                <div class="px-4">
+                    <h4>x+</h4>
+                    <p>lorem ipsums</p>
+                </div>
+            </div>
+            <div class="col-auto projects_item" id="l4">
+                <img src="images/Group.png" alt="group">
+                <div class="px-4">
+                    <h4>x+</h4>
+                    <p>lorem ipsums</p>
+                </div>
+            </div>
+        </div></div>
+    </section>
+
+    <section class="polka py-5 text-center" id="third">
+        <div class="container w-50 intro_text" style="min-width: 400px">
+            <h3 class="m-auto my-3">Do you want your own LI?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel erat sed lacus fringilla vehicula. Ut posuere quis odio non iaculis. Integer sodales rutrum euismod. Aliquam auctor sed felis porttitor bibendum.</p>
+            <form class="w-100">
+                <div class="d-sm-flex w-100">
+                    <div class="col">
+                        <label class="input-group-text float-start" for="len">
+                            Length of LI
+                        </label>
+                        <input type="range" id="len" min="11" max="1000" class="form-range" />
+                    </div>
+                    <div class="form-check col">
+                        <label class="form-label">
+                            <input type="checkbox" id="uppercase" class="form-check-input" />
+                            Uppercase?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <textarea id="li" name="ta" readonly class="form-control" style="height: 150px;">Ur LI</textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="py-5 text-start" id="last">
+        <div class="container w-50" style="min-width: 400px">
+            <h6 class="my-3">
+                Obligatory personal info collecting form:
+            </h6>
+<!--            <form class="w-100" id="mform" accept-charset="UTF-8">-->
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Name" aria-label="Name" id="uname"/>
+                    <input type="text" class="form-control" placeholder="Surname" aria-label="Surname" id="usurname"/>
+                </div>
+                <div class="input-group my-2">
+                    <input type="email" class="form-control" placeholder="Email" aria-label="Email" id="email">
+                </div>
+                <button type="button" id="ig_btn" class="btn btn-danger">Send</button>
+<!--            </form>-->
+        </div>
+    </section>
+
+    <section class="polka py-5 text-center" id="lastForSure">
+        <button id="getdata" type="button" class="btn btn-dark">Get data from PHP</button>
+    </section>
+    </body>
+</html>
