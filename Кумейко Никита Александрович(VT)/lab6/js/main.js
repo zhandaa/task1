@@ -20,7 +20,7 @@ async function infograb(el) {
     const surname = document.getElementById("usurname").value;
     const email = document.getElementById("email").value;
 
-    const resp = await fetch("../ajax.php", {
+    const resp = await fetch("./ajax.php", {
         method: 'POST',
         headers: {
             "Content-Type": "application/json"
@@ -37,7 +37,7 @@ async function infograb(el) {
 
 function getdata() {
     const space = document.getElementById("lastForSure");
-    fetch("../data.php").then((resp) => {
+    fetch("./data.php").then((resp) => {
         if (resp.ok) return resp.json();
         throw new Error("error with getting data");
     }).then((data) => {
