@@ -1,0 +1,58 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    background: #eee;
+}
+.intro_text * {
+    background-color: #eee;
+    width: fit-content;
+
+}
+.intro_btn:hover {
+    color: #ccc;
+    background-color: #555;
+    text-decoration: underline;
+}
+
+#about {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px;
+}
+#about div {
+    max-width: 500px;
+}
+
+.projects {
+    color: white;
+}
+.projects_item {
+    display: flex;
+    justify-content: space-between;
+}
+.projects img {
+    height: 60px;
+    width: 50px;
+}
+
+.polka {
+    background-image:
+            radial-gradient(#ccc 20%, transparent 18%),
+            radial-gradient(#ccc 20%, transparent 18%);
+    background-position: 10px 10px, 30px 30px;
+    background-size: 40px 40px;
+    background-color: rgb(255, 255, 255);
+}
+.rev_polka {
+    background-image:
+            radial-gradient(#111 20%, transparent 18%),
+            radial-gradient(#111 20%, transparent 18%);
+    background-position: 10px 10px, 30px 30px;
+    background-size: 40px 40px;
+    background-color: #333;
+}
