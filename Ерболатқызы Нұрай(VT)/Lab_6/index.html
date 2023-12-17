@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0">
+    <title>Lab22</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/адаптив.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+<header class="header__wrapper">
+    <div class="container header-content">
+        <div class="header row justify-content-between">
+    <div class="logo col col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+       <img src="images/WD.png" alt="Логотип">
+    </div>
+
+    <nav class="nav-block col col-8 col-md-9 col-lg-8 col-xl-8 col-xxl-7">
+            <a class="nav-block_item" href="#main">ГЛАВНАЯ</a>
+            <a class="nav-block_item" href="#me">АВТОР</a>
+            <a class="nav-block_item" href="#work">РАБОТЫ</a>
+            <a class="nav-block_item" href="#sport">ПРОЦЕСС</a>
+    </nav>
+    </div>
+    </div>
+    <div class="burger-menu col-12">
+        <div class="burger-icon" onclick="toggleBurgerMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="burger-nav">
+            <a class="burger-nav_item" href="#main">ГЛАВНАЯ</a>
+            <a class="burger-nav_item" href="#me">АВТОР</a>
+            <a class="burger-nav_item" href="#work">РАБОТЫ</a>
+            <a class="burger-nav_item" href="#sport">ПРОЦЕСС</a>
+        </nav>
+    </div>
+    <script>
+        function toggleBurgerMenu() {
+            const burgerNav = document.querySelector('.burger-nav');
+            burgerNav.classList.toggle('show');
+        }
+    </script>
+</header>
+<section id="main" class="main-section_content" >
+    <div class="container">
+        <div class="main-section row">
+        <div class="main-section_img col-12 col-sm-9 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+            <img src="images/Frame.png" alt="НОУТБУК">
+        </div>
+        <div class="descriptionText col col-md-8 col-lg-7 col-xxl-6">
+        <h1>Дизайн и верстка</h1>
+        <div class="main-section_descr">
+            <p>
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+            </p>
+        </div>
+             <a href="https://instagram.com/bana_na_82?igshid=OGQ5ZDc2ODk2ZA==" class="main-section__btn col col-1">НАПИСАТЬ МНЕ</a>
+        </div>
+    </div>
+    </div>
+</section>
+<section id="me" class="aboutme-section_wrapper">
+    <div class="container">
+        <div class="aboutme-section row">
+            <div class="aboutme-section_content col ">
+                <h2>Обо мне</h2>
+                <div class="row justify-content-center">
+                <p class="col col-md-6 " style="">Меня зовут Нурай мне 18 лет, учусь, работаю и не высыпаюсь.Знак зодиака водолей, не люблю скорпионов. Люблю читать книги про маньяков и смотреть про них документалки.</p>
+                </div>
+                    <div class="навыки_фото ">
+                        <div class="row align-items-center">
+                    <div class="навыки text-center col-12 col-md-8">
+                        <h3>Мои навыки</h3>
+                        <div>Умею готовить макароны</div>
+                        <div>Могу прочитать книгу за день</div>
+                        <div>Обладаю навыком спать по 4 часа и чувствовать себя офигенно</div>
+                    </div>
+                        <div  class="meee col-12 col-md-4">
+                            <img class="me.png" src="images/WhatsApp%20Image%202023-10-28%20at%2011.33.33.jpeg" alt="me">
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section id="work" class="work-section_wrapper">
+    <div class="container">
+        <div class="work-section row  col col-lg-8">
+            <h4>Работ нет их съела собака(((</h4>
+            <div class="dog  col col-lg-12  col-xxl-12">
+            <img class="dog.png" src="images/kwala-1.jpg" alt="собакен">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sport" class="sport-section_wrapper">
+    <div class="container">
+        <div class="sport-section row">
+            <div class="sport-section_content col col-md-8">
+            <h5>ПРОЦЕСС ЗАНЯТИЕМ СПОРТА</h5>
+<iframe width="560" height="315"
+        src="https://www.youtube.com/embed/nie4aHi1lZc?si=Tw4MBVVpqyQiaHzZ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+</iframe>
+        </div>
+    </div>
+    </div>
+</section>
+<section id="dataSection" class="row justify-content-center">
+    <button onclick="fetchData()">получить данные</button>
+    <div id="dataContainer" class="data-container"></div>
+</section>
+
+<script>
+    function fetchData() {
+        // Show loading message
+        $("#dataContainer").html("<p>Loading data...</p>");
+
+        // Use jQuery to make an Ajax request to data.php
+        $.ajax({
+            type: "GET",
+            url: "data.php",
+            dataType: "json",
+            success: function(response) {
+                // Check if the response is empty or an error occurred
+                if (!response || response.error) {
+                    handleFetchError();
+                    return;
+                }
+
+                // Display the data in the dataContainer
+                displayData(response);
+            },
+            error: function() {
+                // Handle Ajax errors
+                handleFetchError();
+            }
+        });
+    }
+
+    function displayData(data) {
+        // Clear previous data
+        $("#dataContainer").empty();
+
+        // Check if the data array is empty
+        if (data.length === 0) {
+            $("#dataContainer").html("<p>No data available.</p>");
+            return;
+        }
+
+        // Display each item in the data array
+        for (var i = 0; i < data.length; i++) {
+            $("#dataContainer").append("<p>" + data[i] + "</p>");
+        }
+    }
+
+    function handleFetchError() {
+        // Display an error message
+        $("#dataContainer").html("<p>Error fetching data. Please try again later.</p>");
+    }
+</script>
+
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="myForm" action="ajax.php" method="POST">
+                    <h1 class="mb-4">Заголовок формы</h1>
+
+                    <div class="form-group" style="width: 100%">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                        <div class="form-group" style="width: 100%">
+                            <label for="email">Ваш email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+                        </div>
+
+                        <button type="button" onclick="submitForm()" class="btn btn-primary">Отправить форму</button>
+                </form>
+                <p id="successMessage" style="display: none;">Ваша заявка успешно отправлена.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Use jQuery to make an Ajax request
+            $.ajax({
+                type: "POST",
+                url: "ajax.php",
+                data: $("#myForm").serialize(),
+                success: function(response) {
+                    if (response.success) {
+                        // If the form is successfully submitted, display success message
+                        $("#myForm").hide();
+                        $("#successMessage").show();
+                    } else {
+                        // Handle any error conditions if needed
+                        alert("Form submission failed. Please try again.");
+                    }
+                },
+                error: function() {
+                    // Handle Ajax errors if needed
+                    alert("Error in Ajax request.");
+                }
+            });
+        }
+    </script>
+</section>
+<script defer src="script.js">
+
+</script>
+</body>
+</html>
