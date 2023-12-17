@@ -70,7 +70,6 @@ p{
   .nav {
     display: flex;
     align-items: center;
-    height: 100%;
     justify-content: center;
   }
   .nav__link {
@@ -182,5 +181,216 @@ p{
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); 
   }
 
+  .dropdown {
+    display: none;
+  }
 
+  .block,
+.modal {
+  display: flex;
+}
+
+.nav__link__one{
+  padding: 12px 30px;
+  border: 2px solid #2B2A2C;
+  border-radius: 20px;
+  transition: background-color 0.2s linear, color 0.2s linear;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 5px; 
+  display: block; 
+}
+
+
+
+  /* Скрытие бургер меню при больших разрешениях */
+ 
+
+  @media screen and (max-width: 992px) {
+
+    .dropdown ul {
+      column-count: 4; 
+      column-gap: 20px; 
+      margin: 0 auto;
+    }
+
+    .dropdown li{
+
+      list-style: none;
+    }
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: auto;
+      cursor: pointer;
+      position: absolute;
+      top: 20px; 
+    }
   
+    .menu-icon.active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-6px, 7px);
+    }
+    
+    .menu-icon.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .menu-icon.active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    
+    .dropdown.show {
+      display: flex;
+    }
+  
+    .bar {
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+      margin: 3px 0;
+      transition: transform 0.3s ease;
+    }
+    
+    .dropdown {
+      display: none;
+    }
+
+    .dropdown.active {
+      display: flex;
+    }
+
+    .block,
+    .modal {
+      display: none;
+    }
+
+  }
+
+  @media (min-width:320px){
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: auto;
+      cursor: pointer;
+      position: absolute;
+      top: auto;
+    }
+    .photo_one img {
+      max-width: 100%; 
+      height: auto; 
+      width: 100%; 
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+    .modal__close img{
+      width: 57px;
+      height: 57px;
+      position: absolute;
+  }
+  .dropdown ul {
+    column-count: 1; 
+    column-gap: 0px; 
+    margin: 0 auto;
+  }
+
+  }
+
+  @media (min-width:576px){
+    .photo_one img {
+      max-width: 100%; 
+      height: auto; 
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: auto;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+    }
+    .modal__close img{
+      width: 57px;
+      height: 57px;
+      position: absolute;
+  }
+  .dropdown ul {
+    column-count: 3; 
+    column-gap: 15px; 
+    margin: 0 auto;
+  }
+  }
+
+  @media (min-width:768px){
+    .photo_one img {
+      max-width: 100%; 
+      height: auto; 
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: auto;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+    }
+    .modal__close img{
+      width: 57px;
+      height: 57px;
+      position: absolute;
+  }
+  .dropdown ul {
+    column-count: 4; 
+    column-gap: 20px; 
+    margin: 0 auto;
+  }
+  }
+  @media (min-width:1024px){
+    .photo_one img {
+      max-width: 100%; 
+      height: auto; 
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+  @media(min-width:1200px){
+    .photo_one img {
+      max-width: 100%; 
+      height: auto; 
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media  (min-width: 993px) {
+    .photo_one img {
+      max-width: 100%; 
+      height: auto; 
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media screen and (min-width: 993px) {
+    .content {
+      display: none;
+    }
+  }
+
+ 
