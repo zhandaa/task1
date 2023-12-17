@@ -1,2 +1,10 @@
-.vscode/
+.db
+.DS_Store
 .idea
+.ini
+.log
+.sass-cache
+node_modules/
+test/
+npm-shrinkwrap.json
+package-lock.json
