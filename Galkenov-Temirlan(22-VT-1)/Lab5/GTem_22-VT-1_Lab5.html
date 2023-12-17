@@ -1,0 +1,1422 @@
+<html>
+<head>
+    <title>G.T.`s JavaScript lab</title>
+    <link href="Style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <body>
+        <ul class="menu">
+            <li><a href="#Z1">1</a></li>
+            <li>
+                <a href="#Z2">2</a>
+            </li>
+            <li>
+                <a href="#Z3">3</a>
+            </li>
+            <li>
+                <a href="#Z4">4</a>
+            </li>
+            <li>
+                <a href="#Z5">5</a>
+            </li>
+            <li>
+                <a href="#Z6">6</a>
+            </li>
+            <li>
+                <a href="#Z7">7</a>
+            </li>
+            <li>
+                <a href="#Z8">8</a>
+            </li>
+            <li>
+                <a href="#Z9">9</a>
+            </li>
+            <li>
+                <a href="#Z10">10</a>
+            </li>
+            <li>
+                <a href="#Z11">11</a>
+            </li>
+            <li>
+                <a href="#Z12">12</a>
+            </li>
+            <li>
+                <a href="#Z13">13</a>
+            </li>
+            <li>
+                <a href="#Z14">14</a>
+            </li>
+            <li>
+                <a href="#Z15">15</a>
+            </li>
+            <li>
+                <a href="#Z16">16</a>
+            </li>
+            <li>
+                <a href="#Z17">17</a>
+            </li>
+            <li>
+                <a href="#Z18">18</a>
+            </li>
+            <li>
+                <a href="#Z19">19</a>
+            </li>
+            <li>
+                <a href="#Z20">20</a>
+            </li>
+            <li>
+                <a href="#Z21">21</a>
+            </li>
+            <li>
+                <a href="#Z22">22</a>
+            </li>
+            <li>
+                <a href="#Z23">23</a>
+            </li>
+            <li>
+                <a href="#Z24">24</a>
+            </li>
+            <li>
+                <a href="#Z25">25</a>
+            </li>
+            <li>
+                <a href="#Z26">26</a>
+            </li>
+            <li>
+                <a href="#Z27">27</a>
+            </li>
+            <li>
+                <a href="#Z28">28</a>
+            </li>
+            <li>
+                <a href="#Z29">29</a>
+            </li>
+            <li>
+                <a href="#Z30">30</a>
+            </li>
+            <li>
+                <a href="#Z31">31</a>
+            </li>
+            <li>
+                <a href="#Z32">32</a>
+            </li>
+            <li>
+                <a href="#Z33">33</a>
+            </li>
+            <li>
+                <a href="#Z34">34</a>
+            </li>
+            <li>
+                <a href="#Z35">35</a>
+            </li>
+            <li>
+                <a href="#Z36">36</a>
+            </li>
+            <li>
+                <a href="#Z37">37</a>
+            </li>
+            <li><a href="#Z38">38</a></li>
+        </ul>
+        <button class="hamburger">
+            <i class="menuIcon">o</i>
+            <i class="closeIcon">x</i>
+        </button>
+        <script>
+            const menu = document.querySelector(".menu");
+            const menuItems = document.querySelectorAll(".menuItem");
+            const hamburger = document.querySelector(".hamburger");
+            const closeIcon = document.querySelector(".closeIcon");
+            const menuIcon = document.querySelector(".menuIcon");
+
+            function toggleMenu() {
+                if (menu.classList.contains("showMenu")) {
+                    menu.classList.remove("showMenu");
+                    closeIcon.style.display = "none";
+                    menuIcon.style.display = "block";
+                } else {
+                    menu.classList.add("showMenu");
+                    closeIcon.style.display = "block";
+                    menuIcon.style.display = "none";
+                }
+            }
+
+            hamburger.addEventListener("click", toggleMenu);
+
+            menuItems.forEach(
+                function (menuItem) {
+                    menuItem.addEventListener("click", toggleMenu);
+                }
+            )
+        </script>
+        <div class="zadan" id="Z1">
+            <!--Задание 1-->
+            <h1>Задание 1</h1>
+            <p>
+                Вывести:
+                Hello world
+            </p>
+            <div class="code">
+                <div class="num">1<br></div>
+                <div class="line"></div>
+                <div class="java">
+                    console.log('Hello World');<br>
+                </div>
+            </div>
+            <button onclick="Zad1()">GO</button>
+            <script>
+                function Zad1() {
+                    console.log("Hello World");
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z2">
+            <!--Задание 2-->
+            <h1>Задание 2</h1>
+            <p>
+                Вывести:
+                Robert
+                Stannis
+                Renly
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>
+                    2<br>
+                    3<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    console.log("Robert");<br>
+                    console.log("Stannis");<br>
+                    console.log("Renly");<br>
+                </div>
+            </div>
+            <button onclick="Zad2()">GO</button>
+            <script>
+                function Zad2() {
+                    console.log("Robert");
+                    console.log("Stannis");
+                    console.log("Renly");
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z3">
+            <!--Задание 3-->
+            <h1>Задание 3</h1>
+            <p>
+                Напишите программу, которая считает и выводит на экран последовательно (по одному значению в каждой строке) значения следующих математических выражений:
+                3 в степени 5
+                -8 разделить на -4
+                остаток от деления 100 на 3
+                сумму трёх предыдущих выражений
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>
+                    2<br>
+                    3<br>
+                    4<br>
+                    5<br>
+                    6<br>
+                    7<br>
+                    8<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    var a = 3 ** 5;<br>
+                    var b = (-8) / (-4);<br>
+                    var c = 100 % 3;<br>
+                    var S = a + b + c;<br>
+                    console.log("3^5 = ",a);<br>
+                    console.log("(-8) / (-4) = ",b);<br>
+                    console.log("100 % 3 = ",c);<br>
+                    console.log("Их сумма: ",S);<br>
+                </div>
+            </div>
+            <button onclick="Zad3()">GO</button>
+            <script>
+                function Zad3() {
+                    var a = 3 ** 5;
+                    var b = (-8) / (-4);
+                    var c = 100 % 3;
+                    var S = a + b + c;
+                    console.log("3^5 = ", a);
+                    console.log("(-8) / (-4) = ", b);
+                    console.log("100 % 3 = ", c);
+                    console.log("Их сумма: ", S);
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z4">
+            <!--Задание 4-->
+            <h1>Задание 4</h1>
+            <p>
+                Проанализируйте этот код и скопируйте его в редактор:
+                console.log(3 ** (4 - 2));
+                Внесите в код такие изменения, которые приведут к синтаксической ошибке.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    console.log(3 * * (4 - 2));<br>
+                </div>
+            </div>
+            <button onclick="Zad4()">GO</button>
+            <script>
+                function Zad4() {
+                    console.log(3 * * (4 - 2));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z5">
+            <!--Задание 5-->
+            <h1>Задание 5</h1>
+            <p>
+                Напишите программу, которая выводит на экран:
+                - Did Joffrey agree?
+                - He did. He also said "I love using \n".
+                При этом программа использует только один console.log(), но результат на экране должен выглядеть в точности, как показано выше.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    console.log("- Did Joffrey agree?\n- He did. He also said \"I love using \\n\".");<br>
+                </div>
+            </div>
+            <button onclick="Zad5()">GO</button>
+            <script>
+                function Zad5() {
+                    console.log("- Did Joffrey agree?\n- He did. He also said \"I love using \\n\".");
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z6">
+            <!--Задание 6-->
+            <h1>Задание 6</h1>
+            <p>
+                Найдите в программе необъявленную переменную и объявите её, присвоив ей значение Dragon.
+                let family = 'Targaryen';
+                console.log(family);
+                console.log('and');
+                console.log(pet);
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    let family = 'Targaryen';<br>
+                    let pet = "Dragon"<br>
+                    console.log(family);<br>
+                    console.log('and');<br>
+                    console.log(pet);<br>
+                </div>
+            </div>
+            <button onclick="Zad6()">GO</button>
+            <script>
+                function Zad6() {
+                    let family = 'Targaryen';
+                    let pet = "Dragon"
+                    console.log(family);
+                    console.log('and');
+                    console.log(pet);
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z7">
+            <!--Задание 7-->
+            <h1>Задание 7</h1>
+            <p>
+                Напишите программу, которая берет исходное количество евро, записанное в константу eurosCount, переводит евро в доллары и выводит на экран. Затем полученное значение переводит в рубли и выводит на новой строчке.
+
+                Пример вывода для 100 евро:
+                125
+                7500
+
+                Считаем, что:
+                1 евро = 1.25 долларов
+                1 доллар = 60 рублей
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    const eurosCount = 100;<br>
+                    var dol = eurosCount * 1.25;<br>
+                    var rub = dol * 60;<br>
+                    console.log(dol);<br>
+                    console.log(rub);<br>
+                </div>
+            </div>
+            <button onclick="Zad7()">GO</button>
+            <script>
+                function Zad7() {
+                    const eurosCount = 100;
+                    var dol = eurosCount * 1.25;
+                    var rub = dol * 60;
+                    console.log(dol);
+                    console.log(rub);
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z8">
+            <!--Задание 8-->
+            <h1>Задание 8</h1>
+            <p>
+                Вы столкнулись с таким кодом, который выводит на экран общее количество комнат во владении нынешнего короля:
+
+                const king = 'King Balon the 6th';
+                console.log(king + ' has ' + (6 * 17) + ' rooms.');
+                Как видите, это магические числа: непонятно, что такое 6 и что такое 17. Можно догадаться, если знать историю королевской семьи: каждый новый король получает в наследство все замки от предков и строит новый замок — точную копию родительского. Эта странная династия просто плодит одинаковые замки…
+
+                Избавьтесь от магических чисел, создав новые переменные, а затем выведите текст на экран:
+
+                King Balon the 6th has 102 rooms.
+                Названия переменных должны передавать смысл чисел, но должны при этом оставаться достаточно короткими и ёмкими для комфортного чтения.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    const king = 'King Balon the 6th';<br>
+                    var zamk = 6;<br>
+                    var roomspr = 17<br>
+                    console.log(king + ' has ' + (zamk * roomspr) + ' rooms.');<br>
+                </div>
+            </div>
+            <button onclick="Zad8()">GO</button>
+            <script>
+                function Zad8() {
+                    const king = 'King Balon the 6th';
+                    var zamk = 6;
+                    var roomspr = 17
+                    console.log(king + ' has ' + (zamk * roomspr) + ' rooms.');
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z9">
+            <!--Задание 9-->
+            <h1>Задание 9</h1>
+            <p>
+                Выведите на экран строку Do you want to eat, &lt;name&gt; ?, где вместо &lt;name&gt; должна использоваться константа stark. Вывод должен получиться таким:
+                Do you want to eat, Arya?
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    const stark = 'Arya';<br>
+                    console.log(`Do you want to eat, ${stark}?`);<br>
+                </div>
+            </div>
+            <button onclick="Zad9()">GO</button>
+            <script>
+                function Zad9() {
+                    const stark = 'Arya';
+                    console.log(`Do you want to eat, ${stark}?`);
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z10">
+            <!--Задание 10-->
+            <h1>Задание 10</h1>
+            <p>
+                Выведите на экран последний символ строки, находящейся в константе word.
+                const word = 'Na\nharis';
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    const word = 'Na\nharis';<br>
+                    console.log(word[7]);<br>
+                </div>
+            </div>
+            <button onclick="Zad10()">GO</button>
+            <script>
+                function Zad10() {
+                    const word = 'Na\nharis';
+                    console.log(word[7]);
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z11">
+            <!--Задание 11-->
+            <h1>Задание 11</h1>
+            <p>
+                Выведите на экран число -0.304.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    var num = parseFloat(-0.304);<br>
+                    console.log(num);<br>
+                </div>
+            </div>
+            <button onclick="Zad11()">GO</button>
+            <script>
+                function Zad11() {
+                    var num = parseFloat(-0.304);
+                    console.log(num);
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z12">
+            <!--Задание 12-->
+            <h1>Задание 12</h1>
+            <p>
+                Вам даны три переменные с фамилиями разных людей. Составьте и выведите на экран слово из символов в таком порядке:
+
+                Третий символ из первой строки
+                Второй символ из второй строки
+                Четвертый символ из третьей строки
+                Пятый символ из второй строки
+                Третий символ из второй строки
+
+                Попробуйте использовать интерполяцию. Внутри фигурных скобок можно размещать не только переменные, но и отдельные символы строки, извлечённые по индексу (с помощью квадратных скобок).
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    const one = 'Naharis';<br>
+                    const two = 'Mormont';<br>
+                    const three = 'Sand';<br>
+                    console.log(one[2] + two[1] + three[3] + two[4] + two[2]);<br>
+                </div>
+            </div>
+            <button onclick="Zad12()">GO</button>
+            <script>
+                function Zad12() {
+                    const one = 'Naharis';
+                    const two = 'Mormont';
+                    const three = 'Sand';
+                    console.log(one[2] + two[1] + three[3] + two[4] + two[2]);
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z13">
+            <!--Задание 13-->
+            <h1>Задание 13</h1>
+            <p>
+                Выведите на экран абсолютное значение числа, находящегося в константе fruitsCount, используя функцию Math.abs(). Эта функция возвращает абсолютное значение переданного числа. Абсолютное значения числа — это само это число без знака перед ним.
+                const fruitsCount = -2309;
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    const fruitsCount = -2309;<br>
+                    console.log(Math.abs(fruitsCount));<br>
+                </div>
+            </div>
+            <button onclick="Zad13()">GO</button>
+            <script>
+                function Zad13() {
+                    const fruitsCount = -2309;
+                    console.log(Math.abs(fruitsCount));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z14">
+            <!--Задание 14-->
+            <h1>Задание 14</h1>
+            <p>
+                Теперь ваша очередь посмотреть на сигнатуру функции в документации и разобраться, как её использовать. Можете читать документацию на русском языке, но программист должен уметь читать документацию на английском. Используйте словари или переводчики при необходимости. Лучше сразу привыкать и подтягивать навыки чтения на английском, иначе будут сложности в будущем.
+                В Math есть функция ceil(). Изучите её документацию.
+                Напишите программу, которая использует функцию Math.ceil() с константой number и выводит результат на экран.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    const number = 923.2238;<br>
+                    console.log(Math.ceil(number));<br>
+                </div>
+            </div>
+            <button onclick="Zad14()">GO</button>
+            <script>
+                function Zad14() {
+                    const number = 923.2238;
+                    console.log(Math.ceil(number));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z15">
+            <!--Задание 15-->
+            <h1>Задание 15</h1>
+            <p>
+                Выведите на экран первую и последнюю буквы предложения, записанного в константу text, в следующем формате:
+                const text = 'Never forget what you are, for surely the world will not';
+                Постарайтесь создать только одну константу, в которую сразу запишется нужный текст перед печатью на экран. В этом уроке мы отрабатываем умение собирать составное выражение.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    const text = 'Never forget what you are, for surely the world will not';<br>
+                    console.log("First: " + text[0] + "\nLast: " + text[length(text) - 1]);<br>
+                </div>
+            </div>
+            <button onclick="Zad15()">GO</button>
+            <script>
+                function Zad15() {
+                    const text = 'Never forget what you are, for surely the world will not';
+                    console.log("First: " + text[0] + "\nLast: " + text[length(text) - 1]);
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z16">
+            <!--Задание 16-->
+            <h1>Задание 16</h1>
+            <p>
+                Посчитайте программно (а не в голове) минимальное число среди 3, 10, 22, -3, 0 — и выведите его на экран. Воспользуйтесь функцией Math.min(), которая работает аналогично Math.max().
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    console.log(Math.min(3, 10, 22, -3, 0));<br>
+                </div>
+            </div>
+            <button onclick="Zad16()">GO</button>
+            <script>
+                function Zad16() {
+                    console.log(Math.min(3, 10, 22, -3, 0));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z17">
+            <!--Задание 17-->
+            <h1>Задание 17</h1>
+            <p>
+                Функция Math.random() возвращает случайное число от 0 до 1 с большим количеством знаков после запятой. Но в реальных задачах бывает нужно получать случайные целые числа, например, в диапазоне от 0 до 10 включительно. Реализуйте код, который выводит на экран именно такое число. Для этой задачи вам понадобятся функции Math.random() и Math.floor()
+
+                Попробуйте решить это задание в одну строчку
+
+                Алгоритм
+                Так как Math.random() возвращает числа в диапазоне от 0 (включительно) до 1 (не включая саму единицу), то чтобы получить числа от 0 до 10 включительно, нам нужно выполнить умножение на 11. Затем получившиеся число округляется до ближайшего меньшего целого. И так мы получаем то, что нужно.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    console.log(Math.floor(Math.random(0, 10) * 11));<br>
+                </div>
+            </div>
+            <button onclick="Zad17()">GO</button>
+            <script>
+                function Zad17() {
+                    console.log(Math.floor(Math.random(0, 10) * 11));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z18">
+            <!--Задание 18-->
+            <h1>Задание 18</h1>
+            <p>
+                Выведите на экран тип значения константы motto.
+                const motto = 'Family, Duty, Honor';
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    const motto = 'Family, Duty, Honor';<br>
+                    console.log(typeof (motto));<br>
+                </div>
+            </div>
+            <button onclick="Zad18()">GO</button>
+            <script>
+                function Zad18() {
+                    const motto = 'Family, Duty, Honor';
+                    console.log(typeof (motto));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z19">
+            <!--Задание 19-->
+            <h1>Задание 19</h1>
+            <p>
+                Данные, вводимые пользователями, часто содержат лишние пробельные символы в конце или начале строки. Обычно их вырезают с помощью метода .trim(), например, было: ' hello\n ', стало: 'hello'.
+                Обновите переменную firstName записав в неё то же самое значение, но обработанное методом .trim(). Распечатайте то, что получилось, на экран.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    let firstName = '  Grigor   \n';<br>
+                    console.log(firstName.trim());<br>
+                </div>
+            </div>
+            <button onclick="Zad19()">GO</button>
+            <script>
+                function Zad19() {
+                    let firstName = '  Grigor   \n';
+                    console.log(firstName.trim());
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z20">
+            <!--Задание 20-->
+            <h1>Задание 20</h1>
+            <p>
+                С помощью метода .slice() получите часть предложения, записанного в константу text, c 6 по 13 символы включительно. В полученной подстроке с помощью метода .replace() замените слово you на someone и выведите на экран длину итоговой подстроки. Выполните эти методы подряд в цепочке без создания промежуточных переменных.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    const text = 'When you play a game of thrones you win or you die.';<br>
+                    console.log(text.slice(5,13).replace("you","someone").length);<br>
+                </div>
+            </div>
+            <button onclick="Zad20()">GO</button>
+            <script>
+                function Zad20() {
+                    const text = 'When you play a game of thrones you win or you die.';
+                    console.log(text.slice(5, 13).replace("you", "someone").length);
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z21">
+            <!--Задание 21-->
+            <h1>Задание 21</h1>
+            <p>
+                Реализуйте функцию с именем printMotto(), которая выведет на экран фразу Winter is coming.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function printMotto() {<br>
+                    console.log("Winter is coming");<br>
+                    };<br>
+                    printMotto();<br>
+                </div>
+            </div>
+            <button onclick="Zad21()">GO</button>
+            <script>
+                function Zad21() {
+                    function printMotto() {
+                        console.log("Winter is coming");
+                    };
+                    printMotto();
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z22">
+            <!--Задание 22-->
+            <h1>Задание 22</h1>
+            <p>
+                Реализуйте функцию sayHurrayThreeTimes(), которая возвращает строку 'hurray! hurray! hurray!'.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function sayHurrayThreeTimes(){<br>
+                    return 'hurray! hurray! hurray!';<br>
+                    };<br>
+                    console.log(sayHurrayThreeTimes());<br>
+                </div>
+            </div>
+            <button onclick="Zad22()">GO</button>
+            <script>
+                function Zad22() {
+                    function sayHurrayThreeTimes() {
+                        return 'hurray! hurray! hurray!';
+                    };
+                    console.log(sayHurrayThreeTimes());
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z23">
+            <!--Задание 23-->
+            <h1>Задание 23</h1>
+            <p>
+                Реализуйте функцию truncate(), которая обрезает переданную строку до указанного количества символов, добавляет в конце многоточие и возвращает получившуюся строку. Подобная логика часто используется на сайтах, чтобы отобразить длинный текст в сокращенном виде.
+
+                Функция принимает два параметра:
+                Строка, которую нужно обрезать
+                Число символов, которые нужно оставить
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    const truncate = (text, length) => {<br>
+                    return text.slice(0,length) + "..."<br>
+                    };<br>
+                    console.log(truncate("Hello world",3))<br>
+                </div>
+            </div>
+            <button onclick="Zad23()">GO</button>
+            <script>
+                function Zad23() {
+                    const truncate = (text, length) => {
+                        return text.slice(0, length) + "..."
+                    };
+                    console.log(truncate("Hello world", 3))
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z24">
+            <!--Задание 24-->
+            <h1>Задание 24</h1>
+            <p>
+                Реализуйте функцию getHiddenCard(), который принимает на вход номер кредитки (состоящий из 16 цифр) в виде строки и возвращает его скрытую версию, которая может использоваться на сайте для отображения. Если исходная карта имела номер 2034399002125581, то скрытая версия выглядит так ****5581. Другими словами, функция заменяет первые 12 символов, на звездочки. Количество звездочек регулируется вторым необязательным параметром. Значение по умолчанию — 4.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function getHiddenCard(nom, zv = 4) {<br>
+                    return '*'.repeat(zv) + nom.slice(12,16)<br>
+                    };<br>
+                    console.log(getHiddenCard("1234567891234567812345678"));<br>
+                </div>
+            </div>
+            <button onclick="Zad24()">GO</button>
+            <script>
+                function Zad24() {
+                    function getHiddenCard(nom, zv = 4) {
+                        return '*'.repeat(zv) + nom.slice(12, 16)
+                    };
+                    console.log(getHiddenCard("1234567891234567812345678"));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z25">
+            <!--Задание 25-->
+            <h1>Задание 25</h1>
+            <p>
+                Реализуйте функцию capitalize(), которая принимает непустую строку и приводит первую букву строки к верхнему регистру
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function capitalize(name) {<br>
+                    return name[0].toUpperCase() + name.slice(1, name.length + 1)<br>
+                    };<br>
+                    console.log(capitalize("temirlan"));<br>
+                </div>
+            </div>
+            <button onclick="Zad25()">GO</button>
+            <script>
+                function Zad25() {
+                    function capitalize(name) {
+                        return name[0].toUpperCase() + name.slice(1, name.length + 1)
+                    };
+                    console.log(capitalize("temirlan"));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z26">
+            <!--Задание 26-->
+            <h1>Задание 26</h1>
+            <p>
+                Реализуйте функцию isInternationalPhone(), которая проверяет формат указанного телефона. Если телефон начинается с +, значит это международный формат.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function isInternationalPhone(num){<br>
+                    return num[0] === "+";<br>
+                    }<br>
+                    console.log(isInternationalPhone("+123456789"));<br>
+                    console.log(isInternationalPhone("0123456789"));<br>
+                </div>
+            </div>
+            <button onclick="Zad26()">GO</button>
+            <script>
+                function Zad26() {
+                    function isInternationalPhone(num) {
+                        return num[0] === "+";
+                    }
+                    console.log(isInternationalPhone("+123456789"));
+                    console.log(isInternationalPhone("0123456789"));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z27">
+            <!--Задание 27-->
+            <h1>Задание 27</h1>
+            <p>
+                Реализуйте функцию isLeapYear(), которая определяет, является ли год високосным. Если год високосный, функция должна вернуть true, если нет – false. Год считается високосным, если он кратен (то есть делится без остатка) 400 или он одновременно кратен 4 и не кратен 100. Как видите, в определении уже заложена вся необходимая логика, осталось только переложить её на код:
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function isLeapYear(yr) {<br>
+                    return (yr % 400 === 0) || ((yr % 4 === 0) && (yr % 100 !== 0))<br>
+                    }<br>
+                    console.log(isLeapYear(2023));<br>
+                </div>
+            </div>
+            <button onclick="Zad27()">GO</button>
+            <script>
+                function Zad27() {
+                    function isLeapYear(yr) {
+                        return (yr % 400 === 0) || ((yr % 4 === 0) && (yr % 100 !== 0))
+                    }
+                    console.log(isLeapYear(2023));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z28">
+            <!--Задание 28-->
+            <h1>Задание 28</h1>
+            <p>
+                Реализуйте функцию isLeapYear(), которая определяет, является ли год високосным. Если год високосный, функция должна вернуть true, если нет – false. Год считается високосным, если он кратен (то есть делится без остатка) 400 или он одновременно кратен 4 и не кратен 100. Как видите, в определении уже заложена вся необходимая логика, осталось только переложить её на код:
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function getLetter(name, nm) {<br>
+                    return name[nm - 1] || "";<br>
+                    };<br>
+                    console.log(getLetter("Темирлан", 3));<br>
+                    console.log(getLetter("Темирлан", 9));<br>
+                </div>
+            </div>
+            <button onclick="Zad28()">GO</button>
+            <script>
+                function Zad28() {
+                    function getLetter(name, nm) {
+                        return name[nm - 1] || "";
+                    };
+                    console.log(getLetter("Темирлан", 3));
+                    console.log(getLetter("Темирлан", 9));
+                }
+            </script>
+        </div>
+        <div class="zadan" id="Z29">
+            <div class="linehor"></div>
+            <!--Задание 29-->
+            <h1>Задание 29</h1>
+            <p>
+                Реализуйте функцию normalizeUrl(), которая выполняет так называемую нормализацию данных. Она принимает адрес сайта и возвращает его с https:// в начале.
+                Функция принимает адреса в виде АДРЕС или https://АДРЕС, но всегда возвращает адрес в виде https://АДРЕС
+                Можно использовать метод startsWith(), чтобы проверить, начинается ли строка с префикса https://. А потом на основе этого добавлять или не добавлять https://.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function normalizeUrl(url){<br>
+                    if (url.startsWith("https://")) {<br>
+                    return url;<br>
+                    } else {<br>
+                    return "https://" + url;<br>
+                    };<br>
+                    console.log(normalizeUrl("site1"));<br>
+                    console.log(normalizeUrl("https://site2"));<br>
+                </div>
+            </div>
+            <button onclick="Zad29()">GO</button>
+            <script>
+                function Zad29() {
+                    function normalizeUrl(url) {
+                        if (url.startsWith("https://")) {
+                            return url;
+                        } else {
+                            return "https://" + url;
+                        };
+                        console.log(normalizeUrl("site1"));
+                        console.log(normalizeUrl("https://site2"));
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z31">
+            <!--Задание 30-->
+            <h1>Задание 30</h1>
+            <p>
+                Реализуйте функцию convertText(), которая принимает на вход строку и, если первая буква не заглавная, возвращает перевернутый вариант исходной строки. Если первая буква заглавная, то строка возвращается без изменений. Если на вход передана пустая строка, функция должна вернуть пустую строку.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function convertText(tx) {<br>
+                    if (tx === "") {<br>
+                    return "";<br>
+                    } else {<br>
+                    return tx[0] === tx[0].toUpperCase() ? tx : reverse(tx);<br>
+                    }<br>
+                    }<br>
+                    console.log(convertText("Hello"));<br>
+                    console.log(convertText("hello"));<br>
+                </div>
+            </div>
+            <button onclick="Zad30()">GO</button>
+            <script>
+                function Zad30() {
+                    function convertText(tx) {
+                        if (tx === "") {
+                            return "";
+                        } else {
+                            return tx[0] === tx[0].toUpperCase() ? tx : reverse(tx);
+                        }
+                    }
+                    console.log(convertText("Hello"));
+                    console.log(convertText("hello"));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z31">
+            <!--Задание 31-->
+            <h1>Задание 31</h1>
+            <p>
+                Реализуйте функцию getNumberExplanation(), которая принимает на вход число и возвращает объяснение этого числа. Если для числа нет объяснения, то возвращается just a number. Объяснения есть только для следующих чисел:
+
+                * 666 - devil number
+                * 42 - answer for everything
+                * 7 - prime number
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function getNumberExplanation(num) {<br>
+                    switch (num) {<br>
+                    case 666:<br>
+                    return "devil number";<br>
+                    break;<br>
+                    case 7:<br>
+                    return "prime number";<br>
+                    break;<br>
+                    case 42:<br>
+                    return "answer for everything";<br>
+                    break;<br>
+                    default:<br>
+                    return "just a number<br>
+                    }<br>
+                    console.log(getNumberExplanation(666));<br>
+                    console.log(getNumberExplanation(7));<br>
+                    console.log(getNumberExplanation(42));<br>
+                    console.log(getNumberExplanation(6));<br>
+                </div>
+            </div>
+            <button onclick="Zad31()">GO</button>
+            <script>
+                function Zad31() {
+                    function getNumberExplanation(num) {
+                        switch (num) {
+                            case 666:
+                                return "devil number";
+                                break;
+                            case 7:
+                                return "prime number";
+                                break;
+                            case 42:
+                                return "answer for everything";
+                                break;
+                            default:
+                                return "just a number";
+                        }
+                    }
+                    console.log(getNumberExplanation(666));
+                    console.log(getNumberExplanation(7));
+                    console.log(getNumberExplanation(42));
+                    console.log(getNumberExplanation(6));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z32">
+            <!--Задание 32-->
+            <h1>Задание 32</h1>
+            <p>
+                Модифицируйте функцию printNumbers() так, чтобы она выводила числа в обратном порядке. Для этого нужно идти от верхней границы к нижней. То есть счётчик должен быть инициализирован максимальным значением, а в теле цикла его нужно уменьшать до нижней границы.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    const printNumbers = (initialNumber) => {<br>
+                    while (initialNumber > 0) {<br>
+                    console.log(initialNumber);<br>
+                    initialNumber -= 1;<br>
+                    }<br>
+                    console.log("finished!");<br>
+                    };<br>
+                    printNumbers(6);<br>
+                </div>
+            </div>
+            <button onclick="Zad32()">GO</button>
+            <script>
+                function Zad32() {
+                    const printNumbers = (initialNumber) => {
+                        while (initialNumber > 0) {
+                            console.log(initialNumber);
+                            initialNumber -= 1;
+                        }
+                        console.log("finished!");
+                    };
+                    printNumbers(6);
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z33">
+            <!--Задание 33-->
+            <h1>Задание 33</h1>
+            <p>
+                Модифицируйте функцию printNumbers() так, чтобы она выводила числа в обратном порядке. Для этого нужно идти от верхней границы к нижней. То есть счётчик должен быть инициализирован максимальным значением, а в теле цикла его нужно уменьшать до нижней границы.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function joinNumbersFromRange(str, fnsh) {<br>
+                    let i = str;<br>
+                    let rng = "";<br>
+                    while (i <= fnsh) {<br>
+                    rng = `${rng}${i}`;<br>
+                    i += 1;<br>
+                    };<br>
+                    return rng;<br>
+                    }<br>
+                    console.log(joinNumbersFromRange(2, 5));<br>
+                </div>
+            </div>
+            <button onclick="Zad33()">GO</button>
+            <script>
+                function Zad33() {
+                    function joinNumbersFromRange(str, fnsh) {
+                        let i = str;
+                        let rng = "";
+                        while (i <= fnsh) {
+                            rng = `${rng}${i}`;
+                            i += 1;
+                        };
+                        return rng;
+                    }
+                    console.log(joinNumbersFromRange(2, 5));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z34">
+            <!--Задание 34-->
+            <h1>Задание 34</h1>
+            <p>
+                Реализуйте функцию mySubstr(), которая извлекает из строки подстроку указанной длины. Она принимает на вход два аргумента (строку и длину) и возвращает подстроку, начиная с первого символа:
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function mySubstr(txt, nm) {<br>
+                    let i = 0;<br>
+                    let rsl = "";<br>
+                    while (i < nm) {<br>
+                    rsl = `${rsl}${txt[i]}`;<br>
+                    i += 1;<br>
+                    };<br>
+                    return rsl;<br>
+                    }<br>
+                    console.log(mySubstr('Hello',3));<br>
+                </div>
+            </div>
+            <button onclick="Zad34()">GO</button>
+            <script>
+                function Zad34() {
+                    function mySubstr(txt, nm) {
+                        let i = 0;
+                        let rsl = "";
+                        while (i < nm) {
+                            rsl = `${rsl}${txt[i]}`;
+                            i += 1;
+                        };
+                        return rsl;
+                    }
+                    console.log(mySubstr('Hello', 3));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z35">
+            <!--Задание 35-->
+            <h1>Задание 35</h1>
+            <p>
+                Функция countChars() из теории считает, сколько раз входит буква в предложение и при этом учитывает регистр букв. То есть A и a с её точки зрения разные символы. Реализуйте вариант этой же функции, так чтобы регистр букв был не важен:
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function countChars(text, bk) {<br>
+                    let i = 0;<br>
+                    let sum = 0;<br>
+                    while (i < text.length) {<br>
+                    if (text[i].toUpperCase() === bk.toUpperCase()) {<br>
+                    sum += 1;<br>
+                    }<br>
+                    i += 1;<br>
+                    }<br>
+                    return sum;<br>
+                    }<br>
+                    console.log(countChars('Elloe', 'E'));<br>
+                </div>
+            </div>
+            <button onclick="Zad35()">GO</button>
+            <script>
+                function Zad35() {
+                    function countChars(text, bk) {
+                        let i = 0;
+                        let sum = 0;
+                        while (i < text.length) {
+                            if (text[i].toUpperCase() === bk.toUpperCase()) {
+                                sum += 1;
+                            }
+                            i += 1;
+                        }
+                        return sum;
+                    }
+                    console.log(countChars('Elloe', 'E'));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z36">
+            <!--Задание 36-->
+            <h1>Задание 36</h1>
+            <p>
+                Напишите функцию makeItFunny(), которая принимает на вход строку и возвращает её копию, у которой каждый n-ный элемент переведен в верхний регистр. n – задается на входе в функцию.
+
+                Для определения каждого n-ного элемента понадобится остаток от деления %. Подумайте, как его можно использовать.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function makeItFunny(text, n) {<br>
+                    let result = '';<br>
+                    let i = 0;<br>
+                    while (i < text.length) {<br>
+                    result += (i + 1) % n === 0 ? text[i].toUpperCase() : text[i];<br>
+                    i++;<br>
+                    }<br>
+                    return result;<br>
+                    }<br>
+                    console.log(countChars('Elloe', 'E'));<br>
+                </div>
+            </div>
+            <button onclick="Zad36()">GO</button>
+            <script>
+                function Zad36() {
+                    function makeItFunny(text, n) {
+                        let result = '';
+                        let i = 0;
+                        while (i < text.length) {
+                            result += (i + 1) % n === 0 ? text[i].toUpperCase() : text[i];
+                            i++;
+                        }
+                        return result;
+                    }
+                    console.log(makeItFunny('Hello world', 3));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z37">
+            <!--Задание 37-->
+            <h1>Задание 37</h1>
+            <p>
+                Сэмвелл обнаружил, что его сообщения перехватываются и читаются в замке «Близнецы», поэтому его атаки перестали быть внезапными. Немного подумав, он разработал программу, которая будет шифровать передаваемые сообщения по следующему алгоритму: программа получает на вход строку и меняет местами в ней каждые 2 подряд идущих символа. Если длина строки нечётная, то последний символ остаётся на своём месте.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function encrypt(message) {<br>
+                    let rsl = '';<br>
+                    for (let i = 0; i < message.length - 1; i += 2) {<br>
+                    rsl += message[i + 1] + message[i];<br>
+                    }<br>
+                    if (message.length % 2 !== 0) {<br>
+                    rsl += message[message.length - 1];<br>
+                    }<br>
+                    return rsl;<br>
+                    }<br>
+                    console.log(encrypt('Hello world'));<br>
+                </div>
+            </div>
+            <button onclick="Zad37()">GO</button>
+            <script>
+                function Zad37() {
+                    function encrypt(message) {
+                        let rsl = '';
+                        for (let i = 0; i < message.length - 1; i += 2) {
+                            rsl += message[i + 1] + message[i];
+                        }
+                        if (message.length % 2 !== 0) {
+                            rsl += message[message.length - 1];
+                        }
+                        return rsl;
+                    }
+                    console.log(encrypt('Hello world'));
+                }
+            </script>
+        </div>
+        <div class="linehor"></div>
+        <div class="zadan" id="Z38">
+            <!--Задание 38-->
+            <h1>Задание 38</h1>
+            <p>
+                Создайте функцию getTriangleArea(), которая принимает два аргумента h и b и вычисляет площадь треугольника по формуле A = 1/2 * h * b, где h — высота, а b — основание треугольника.
+            </p>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    export const getTrianglePerimeter = (a, b, c) => a + b + c;<br>
+                    export const getTriangleArea = (h, b) => 0.5 * h * b;<br>
+                </div>
+            </div>
+            <div>-</div>
+            <div class="code">
+                <div class="num">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>
+                </div>
+                <div class="line"></div>
+                <div class="java">
+                    function Zad38() {<br>
+                    import square from './square.js';<br>
+                    import { getTriangleArea } from './myMathModule.js';<br>
+                    const calculateTriangleArea = (n) => {<br>
+                    let height = n;<br>
+                    let base = square(n) / 2;<br>
+                    return getTriangleArea(height, base);<br>
+                    };<br>
+                    console.log(calculateTriangleArea(6));<br>
+                    }<br>
+                </div>
+            </div>
+            <button onclick="Zad38()">GO</button>
+            <script>
+                export const getTrianglePerimeter = (a, b, c) => a + b + c;
+                export const getTriangleArea = (h, b) => 0.5 * h * b;
+            </script>
+            <script>
+                function Zad38() {
+                    import square from './square.js';
+                    import { getTriangleArea } from './myMathModule.js';
+
+                    const calculateTriangleArea = (n) => {
+                        let height = n;
+                        let base = square(n) / 2;
+                        return getTriangleArea(height, base);
+                    };
+                    console.log(calculateTriangleArea(6));
+                }
+            </script>
+        </div>
+    </body>
+</html>
