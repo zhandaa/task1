@@ -1,0 +1,65 @@
+/* Адаптив для мобильных устройств */
+@media (max-width: 576px) {
+    .header-content {
+        flex-direction: column;
+    }
+    .nav-block {
+        width: 100%;
+        text-align: center;
+    }
+    .logo {
+        margin: 10px auto;
+    }
+    .main-section_img,
+    .descriptionText {
+        text-align: center;
+    }
+    .descriptionText a {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .aboutme-section_content,
+    .hobby-section,
+    .content-section_content {
+        text-align: center;
+        align-items: center;
+    }
+    .навыки_фото,
+    .meee,
+    .hobby {
+        margin: 10px auto;
+    }
+    .навыки,
+    .meee,
+    .hobby {
+        text-align: center;
+    }
+    .hobby-section h4 {
+        text-align: center;
+    }
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Адаптив для планшетов и десктопов */
+@media (min-width: 576px) {
+    .header-content {
+        justify-content: space-between;
+    }
+    .main-section_img img,
+    .hobby img {
+        width: 100%;
+        height: auto;
+    }
+    .nav-block_item {
+        margin-right: 15px;
+    }
+    .descriptionText {
+        margin-left: 10px;
+    }
+}
+
