@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_2</title>
+
+    <meta name="description" content="Обзор Дуолинго">
+    <meta name="keywords" content="Duolingo, Польза">
+    <meta name="author" content="Ярослав Белоусов, lab_2">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/reset.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+     
+    <link rel="stylesheet" href="./assets/style.css">
+
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="m_container">
+          <div class="navbar__wrap">
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div id="logo" class="logo">
+                <img src="./assets/images/WD.png" alt="Логотип">
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="#main">ГЛАВНАЯ</a></li>
+                <li><a href="#aboutme">ОБ АВТОРЕ</a></li>
+                <li><a href="#abouthelp">О ПОЛЬЗЕ</a></li>
+                <li><a href="#work">КАК Я РАБОТАЮ</a></li>
+                <li><a href="#function">ФУНКЦИОНАЛ</a></li>
+                <li><a href="#contacts">КОНТАКТЫ</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="popup" id="popup"></div>
+    
+
+    <section id="main" class="main-section__wrapper"> 
+        <div class="container">
+            <div class="main-section row">
+                <div class="main-section__img col col-md-3">
+                    <img src="./assets/images/unnamed 1Duopaimting.jpg" alt="Совенок" class="lazy"> 
+                </div>  
+                <div class="main-section__content col col-md-8 col-lg-7 col-xxl-6">
+                    <h1>Польза Дуолинго</h1>
+                    <div class="main-section__descr"> 
+                        <p> 
+                            Дуолинго - это бесплатное приложение для изучения языков, в котором вы на практике сможете учить новый язык. Тут есть несколько видов заданий, в том числе аудирование и произношение. 
+                        </p>
+                    </div>        
+                    <a href="https://www.duolingo.com/" class="main-section__btn col col-1"> 
+                        Скачать Дуолинго
+                    </a> 
+                </div>
+            </div>
+        </div>       
+    </section>
+    <section id="aboutme" class="myself-section__wrapper">
+        <div class="container">
+            <div class="myself-section row">
+                <div class="myself-section__content col col-lg-8 col-xl-5 col-xxl-">
+                    <h2>Обо мне</h2>
+                    <div class="myself-section__descr"> 
+                        <p> 
+                            Автором данной статьи является Белоусов Ярослав Алексеевич, студент группы 22-ВТ-1. Этот html-документ является моей 2-ой лабораторной работой по предмету Интернет технологии.
+                        </p>
+                        <p>
+                            Если ты хочешь выйти со мной на контакт или поучиться вместе со мной иностранному языку, то я оставляю тут свои контакты!
+                        </p>
+                    </div>
+                </div>
+                <div class="myself-section__img col col-lg-12 col-xl-7 col-xxl-6">
+                    <img src="./assets/images/Yaroslav.png" alt="Yaroslav" class="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="abouthelp" class="abouthelp-section__wrapper">
+        <div class="container">
+            <div class="abouthelp-section row">            
+                <div class="abouthelp-section__content col col-lg-8">
+                    <h3>Польза Дуолинго для меня</h3>
+                    <div class="abouthelp-section__descr"> 
+                        <p> 
+                            На данный момент я нахожусь на границе второго и третьего модуля, из 6 возможных, в этом приложении. Я уже могу свободно составлять простые предложения из ряда Present simple и Present continuous. В моем словарном запасе около 1100 английских слов. Мой слух уже может свободно ориентироваться на несложные слова и даже предложения.
+                        </p>
+                    </div>         
+                </div>            
+            </div>  
+    </section>   
+    <section class="abouthelp-section__img__wrapper">     
+        <div class="container">      
+            <div class="abouthelp-section__img row">
+                <div class="languages col col-lg-12">
+                    <div class="lang">
+                        <div><img src="./assets/images/American_flag 1.png" alt="Флаг Америки" class="lazy"></div>
+                        <p>Английский</p>
+                    </div>
+                    <div class="lang">
+                        <div><img src="./assets/images/france.png" alt="Флаг Франции" class="lazy"></div>
+                        <p>Французский</p>
+                    </div>
+                    <div class="lang">
+                        <div><img src="./assets/images/nemec.png" alt="Флаг Германии" class="lazy"></div>
+                        <p>Немецкий</p>
+                    </div>
+                    <div class="lang">
+                        <div><img src="./assets/images/espanol.png" alt="Флаг Испании" class="lazy"></div>
+                        <p>Испанский</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="work-section__wrapper">
+        <div class="container">
+            <div class="work-section row">            
+                <div class="work-section__content col col-md-8">
+                    <h4>Как я работаю</h4>
+                    <div class="work-section__descr"> 
+                        <p> 
+                            Прогресс в учебе заключается в том, что вы идете по хронологической цепочки заданий, постепенно увеличивая сложность самих заданий.
+                        </p>
+                    </div>         
+                </div> 
+                <div class="work-section__img">
+                    <img src="./assets/images/work.png" alt="Прогрес в работе" class="lazy">
+                </div>          
+            </div>
+        </div> 
+    </section>
+    <section id="function" class="function-section__wrapper">
+        <div class="container ">
+            <div class="function-section">
+                <div class="function-section__content col col-lg-8">
+                    <h5>Функционал приложения/сайта</h5>
+                    <div class="function-section__descr"> 
+                        <p> 
+                            Помимо хронологической цепочки Дуолинго предоставляет вам для разнообразия несколько других вкладок: 
+                            Персональный план тренировки (аудирование, произношение, истории с персонажами, исправление ошибок)
+                            Лиги - можно соревноваться с миллионами других пользователей.
+                            Задания (парные задания с друзьями, ежедневные задания и задания месяца)
+                            Достижения (ударный режим, очки опыта, словарный запас и т.д.)
+                            Магазин для покупки усилений и Duolingo Super.
+                        </p>
+                    </div>         
+                </div> 
+                <div class="function_img col col-md-12">
+                    <div class="st1 col">
+                        <img src="./assets/images/modules.png" alt="Модули" class="lazy">
+                        <img src="./assets/images/quests.png" alt="Задания" class="lazy">
+                    </div>
+                    <div class="st1 col">
+                        <img src="./assets/images/plan.png" alt="План" class="lazy">
+                        <img src="./assets/images/achievments.png" alt="Достижения" class="lazy">
+                    </div>
+                    <div class="st1 col">
+                        <img src="./assets/images/league.png" alt="Лига игроков" class="lazy">
+                        <img src="./assets/images/store.png" alt="Магазин" class="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dataSection">
+        <button class="data_button" onclick="fetchData()">Получить данные</button>
+        <div id="output"></div>
+    </section>
+
+    <section class="section-form" style="padding: 30px 0;background-color: #EEEFF1;">
+        <div class="container">
+          <div class="row justify-content-center mt-5 mb-5">
+            <div class="col-12 col-md-8 col-xl-6">
+              <form id="form"
+                class="form flex-column align-items-center gap-3" style="display: flex;"
+                action="./ajax.php"
+              >
+                <div class="form-group" style="width: 100%">
+                  <label for="name">Ваше прозвище</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"       
+                    name="name"
+                    placeholder="Введите ваше прозвище"
+                  />
+                </div>
+                <div class="form-group" style="width: 100%">
+                  <label for="email">Ваш email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Введите email"
+                  />
+                </div>
+                <button type="submit" class="button">Отправить</button>
+              </form>
+              <p style="display: none; justify-content: center;font-size:2rem;">Ваша заявка успешна отправлена.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer id="contacts" class="contact-section__wrapper">
+        <section class="duo_acc_wrapper col">
+            <div class="container">
+                <div class="duo_acc">  
+                    <div class="contact-section__acc">
+                        <div class="acc col col-2">
+                            <a href="https://www.duolingo.com/profile/Fo7r13" class="yar_acc_duo"> 
+                                Ярослав Fo7r13
+                            </a> 
+                        </div>
+                        <div class="prava">(с) 2023. Все права защищены.</div>
+                    </div>
+                    <div class="duo_img col col-6 col-lg-5 col-xxl-4">
+                        <img src="./assets/images/duo.png" alt="duolingo логотип">
+                    </div>
+                </div>
+            </div> 
+        </section>   
+        <section class="vk_acc_wrapper col">
+            <div class="container">
+                <div class="vk_acc">
+                    <div class="contact-section__acc">
+                        <div class="acc col col-2">
+                            <a href="https://vk.com/nothingistrueeverythingisallowed" class="yar_acc_vk"> 
+                                Ярослав Белоусов
+                            </a>
+                        </div>
+                        <div class="prava">(с) 2023. Все права защищены.</div>
+                    </div>
+                    <div class="vk_img col col-5 col-lg-4 col-xxl-3">
+                        <img src="./assets/images/vk-social-network-logo.png" alt="vk логотип">
+                        <img src="./assets/images/vk-social-network-logo.png" alt="vk логотип">
+                        <img src="./assets/images/vk-social-network-logo.png" alt="vk логотип">
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </footer>   
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Находим все изображения с классом lazy
+          var lazyImages = document.querySelectorAll('.lazy');
+      
+          // Опции для Intersection Observer
+          var options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2 // Порог видимости элемента
+          };
+      
+          // Функция для обработки изменений видимости элементов
+          var handleIntersection = function(entries, observer) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                // Если элемент становится видимым, добавляем класс для анимации
+                entry.target.classList.add('visible');
+                // Прекращаем слежение за этим элементом
+                observer.unobserve(entry.target);
+              }
+            });
+          };
+      
+          // Создаем экземпляр Intersection Observer для каждого изображения
+          lazyImages.forEach(function(image) {
+            var observer = new IntersectionObserver(handleIntersection, options);
+            observer.observe(image);
+          });
+        });
+
+        const hamb = document.querySelector("#hamb");
+        const popup = document.querySelector("#popup");
+        const body = document.body;
+
+        // Клонируем меню, чтобы задать свои стили для мобильной версии
+        const menu = document.querySelector("#menu").cloneNode(1);
+
+        // При клике на иконку hamb вызываем ф-ию hambHandler
+        hamb.addEventListener("click", hambHandler);
+
+        // Выполняем действия при клике ..
+        function hambHandler(e) {
+          e.preventDefault();
+          // Переключаем стили элементов при клике
+          popup.classList.toggle("open");
+          hamb.classList.toggle("active");
+          body.classList.toggle("noscroll");
+          renderPopup();
+        }
+
+        // Здесь мы рендерим элементы в наш попап
+        function renderPopup() {
+          popup.appendChild(menu);
+        }
+
+        // Код для закрытия меню при нажатии на ссылку
+        const links = Array.from(menu.children);
+
+        // Для каждого элемента меню при клике вызываем ф-ию
+        links.forEach((link) => {
+          link.addEventListener("click", closeOnClick);
+        });
+
+        // Закрытие попапа при клике на меню
+        function closeOnClick() {
+          popup.classList.remove("open");
+          hamb.classList.remove("active");
+          body.classList.remove("noscroll");
+        }
+
+
+        
+        function fetchData() {
+        // Выполняем запрос к файлу data.php
+        fetch('data.php')
+            .then(response => response.json())
+            .then(data => {
+                // Выводим данные в элемент с id="output"
+                document.getElementById('output').innerHTML = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Ошибка при получении данных:', error));
+        }
+    
+        const form = document.querySelector('#form');
+        if(form) {
+          let result;
+          form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            let response = await fetch('./ajax.php', {
+              method: "POST",
+              body: formData,
+            });
+            result = await response.json();
+            if (result.success) {
+              form.style.display='none';
+              form.nextElementSibling.style.display = 'flex';
+            } else {
+              console.log('Не удалось получить успешный ответ от сервера');
+            }
+            return await result;
+          });
+        }
+
+        const btnGetData = document.querySelector('#btnGetData');
+        const dataContainer = document.querySelector('#dataContainer');
+        if (btnGetData && dataContainer) {
+          btnGetData.addEventListener('click', (e) => {
+            e.preventDefault();
+            fetch('./data.php')
+                .then(response => {     
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+                .then(data => {
+                    if(data) {
+                      data.forEach(item => {
+                        var container = document.createElement('div');
+                        container.classList.add('d-flex', 'gap-3');
+                        container.innerHTML = '<h5>' + item.name + '</h5>' +
+                        '<p>Age: ' + item.age + '</p>' +
+                        '<p>City: ' + item.city + '</p>';
+                        dataContainer.appendChild(container);
+                      });
+                  
+                    }
+                })
+                .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+        });
+        }
+
+      </script>     
+</body>
+</html>
