@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <title>Скриншоты Курса</title>
+  <style>
+    .gallery-item {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-center my-4">Галерея Курса JS</h1>
+
+  <div class="row">
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (458).png')">
+      <img src="./images/Снимок экрана (458).png" class="img-fluid" alt="Скриншот 1">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (459).png')">
+      <img src="./images/Снимок экрана (459).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+    
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (460).png')">
+      <img src="./images/Снимок экрана (460).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (461).png')">
+      <img src="./images/Снимок экрана (461).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (462).png')">
+      <img src="./images/Снимок экрана (462).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (463).png')">
+      <img src="./images/Снимок экрана (463).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (464).png')">
+      <img src="./images/Снимок экрана (464).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (465).png')">
+      <img src="./images/Снимок экрана (465).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (466).png')">
+      <img src="./images/Снимок экрана (466).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (467).png')">
+      <img src="./images/Снимок экрана (467).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (468).png')">
+      <img src="./images/Снимок экрана (468).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (469).png')">
+      <img src="./images/Снимок экрана (469).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (470).png')">
+      <img src="./images/Снимок экрана (470).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (471).png')">
+      <img src="./images/Снимок экрана (471).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (472).png')">
+      <img src="./images/Снимок экрана (472).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (473).png')">
+      <img src="./images/Снимок экрана (473).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (474).png')">
+      <img src="./images/Снимок экрана (474).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (475).png')">
+      <img src="./images/Снимок экрана (475).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (476).png')">
+      <img src="./images/Снимок экрана (476).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (477).png')">
+      <img src="./images/Снимок экрана (477).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (478).png')">
+      <img src="./images/Снимок экрана (478).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (479).png')">
+      <img src="./images/Снимок экрана (479).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (480).png')">
+      <img src="./images/Снимок экрана (480).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (481).png')">
+      <img src="./images/Снимок экрана (481).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (482).png')">
+      <img src="./images/Снимок экрана (482).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (483).png')">
+      <img src="./images/Снимок экрана (483).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (484).png')">
+      <img src="./images/Снимок экрана (484).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (485).png')">
+      <img src="./images/Снимок экрана (485).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (486).png')">
+      <img src="./images/Снимок экрана (486).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (487).png')">
+      <img src="./images/Снимок экрана (487).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (488).png')">
+      <img src="./images/Снимок экрана (488).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (489).png')">
+      <img src="./images/Снимок экрана (489).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (490).png')">
+      <img src="./images/Снимок экрана (490).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (491).png')">
+      <img src="./images/Снимок экрана (491).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (492).png')">
+      <img src="./images/Снимок экрана (492).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (493).png')">
+      <img src="./images/Снимок экрана (493).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (494).png')">
+      <img src="./images/Снимок экрана (494).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (495).png')">
+      <img src="./images/Снимок экрана (495).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+
+    <div class="col-md-4 gallery-item" onclick="openModal('./images/Снимок экрана (496).png')">
+      <img src="./images/Снимок экрана (496).png" class="img-fluid" alt="Скриншот 2">
+    </div>
+  </div>
+
+
+  <div id="myModal" class="modal" onclick="closeModal()">
+    <img class="modal-content" id="modalImage">
+  </div>
+</div>
+
+<script>
+  function openModal(imageSrc) {
+    var modal = document.getElementById("myModal");
+    var modalImage = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImage.src = imageSrc;
+  }
+
+  function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+  }
+
+  // Закрытие модального окна при нажатии клавиши Esc (курсором в другом месте тоже работает)
+  document.addEventListener('keydown', function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.key === "Escape" && modal.style.display === "block") {
+      closeModal();
+    }
+  });
+</script>
+</body>
+</html>

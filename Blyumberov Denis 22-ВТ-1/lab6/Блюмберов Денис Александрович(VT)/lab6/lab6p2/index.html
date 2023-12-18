@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>мой первый сайт</title>
+    <link rel="stylesheet" href="css/Styles.css" />
+    <link rel="stylesheet" href="css/Adaptive.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="navigate row">
+          <div class="logo col col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <img src="img/WD.png" alt="WD" class="img" />
+          </div>
+          <div
+            class="nav_panel col col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-4"
+          >
+            <a href="#main" class="nav_item">ГЛАВНАЯ</a>
+            <a href="#about" class="nav_item">ОБ АВТОРЕ</a>
+            <a href="#contact" class="nav_item">КОНТАКТЫ</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="meeting row">
+          <div
+            class="laptopFoto col-12 col-sm-9 col-md-6 col-lg-4 col-xl-4 col-xxl-4"
+          >
+            <img src="img/laptopFoto.jpg" alt="image1" class="img" />
+          </div>
+          <div class="design col-12 col-lg-5 col-xl-7 col-xxl-5">
+            <h1 id="main" class="head1">Дизайн и верстка</h1>
+            <p class="text1">
+              Это мой первый сайт, который я сверстал с платформы figma
+            </p>
+            <a href="https://github.com" class="button meetMe">
+              написать мне
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <a onclick="fetchData()" class = "extractDataBTN ">
+        Получить данные
+      </a>
+      <div id="dataShow"></div>
+    </section>
+    <section class="section-form" style="padding: 30px 0;background-color: #EEEFF1;">
+      <div class="container">
+        <div class="row justify-content-center mt-5 mb-5">
+          <div class="col-12 col-md-8 col-xl-6">
+            <form id="form" class="form flex-column align-items-center gap-3" style="display: flex;" action="./ajax.php" >
+              <div class="form-group" style="width: 100%">
+                <label for="name">Ваше имя</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Введите ваше имя">
+              </div>
+              <div class="form-group" style="width: 100%">
+                <label for="email">Ваш email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Введите email">
+              </div>
+              <button type="submit" class="button">Отправить</button>
+            </form>
+            <p style="display: none; justify-content: center;font-size:2rem; background-color: #34547A;">Спасибо, Ваша заявка принята!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <div class="container">
+        <div class="aboutMe">
+          <h1 id="about" class="head2">Обо мне</h1>
+          <p class="text2">
+            Меня зовут Блюмберов Денис, я обучаюсь в ВКТУ на профессии
+            Вычислительная техника и программное обеспечение (ВТиПО), в группе
+            22-ВТ-1.
+          </p>
+        </div>
+        <div class="mySkill row">
+          <div class="myPhoto col-sm-9 col-md-8 col-lg-4 col-xl-5 col-xxl-5">
+            <img src="img/myFoto.jpg" alt="myPhoto" class="img" />
+          </div>
+          <div class="skill col-12 col-sm-9 col-md-8 col-lg-4 col-xl-7 col-xxl-4">
+            <h1 class="head3">Мои навыки</h1>
+            <ul>
+              <li class="skills">Adobe photoshop</li>
+              <li class="skills">C#</li>
+              <li class="skills">HTML</li>
+              <li class="skills">CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="logos col-sm-12 col-md-12 col-xl-12">
+            <div class="row">
+                <div class="logos-img__wrapper col-12 col-lg-3 col-sm-6">
+                    <img src="img/Micro.jpg" alt="MicrosoftLogo" class="logos-img" />
+                </div>
+                <div class="logos-img__wrapper col-12 col-lg-3 col-sm-6">
+                    <img src="img/studioCode.jpg" alt="VisualCodeLogo" class="logos-img" />
+                </div>
+                <div class="logos-img__wrapper col-12 col-lg-3 col-sm-6">
+                    <img src="img/studio.jpg" alt="VisualstudioLogo" class="logos-img" />
+                </div>
+                <div class="logos-img__wrapper col-12 col-lg-3 col-sm-6">
+                    <img src="img/htmlLogo.png" alt="HTML"  class="logos-img__html logos-img" />
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="feedBack row">
+          <div class="col-sm-12 col-md-8 col-lg-8 col-8 col-xxl-8">
+            <h1 class="head4" id="contact">Блюмберов Денис</h1>
+            <p class="text3">2023г. Не все права защищены.</p>
+          </div>
+          <div
+            class="contactLogos col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+          >
+            <a href="https://web.vk.com">
+              <img src="img/vkLogo.png" alt="VK" class="img" />
+            </a>
+            <a href="https://web.whatsapp.com">
+              <img src="img/whatsappLogo.png" alt="WhatsApp" class="img" />
+            </a>
+            <a href="https://web.telegram.org">
+              <img src="img/telegramLogo.png" alt="Telegram" class="img" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src = './script/script.js'></script>
+  </body>
+</html>

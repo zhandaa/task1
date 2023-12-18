@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+          rel="stylesheet"
+          crossorigin="anonymous"
+  />
+  <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+          crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./Блюмберов Денис Александрович(VT)/assets/style.css" />
+  <title>ИТ 22-ВТ и 23-ВТТ</title>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1>ИТ 22-ВТ и 23-ВТТ</h1>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="teacher">
+    <div class="container">
+      <div
+              class="row g-3 justify-content-center students__inner"
+      >
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="students__card">
+            <div class="students__card-img">
+              <a class="students__card-link" href="ZhanybekZhandos"></a>
+              <img
+                      src="./Блюмберов Денис Александрович(VT)/assets/img/ava.jpg"
+                      alt="Жаныбек Жандос аватарка"
+              />
+            </div>
+            <h2 class="students__card-title">Жаныбек Жандос</h2>
+            <h3 class="students__card-text">
+              Преподаватель дисциплины <br />"Интернет технологии"
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="students">
+    <div class="container">
+      <div
+              id="jsStudents"
+              class="row g-3 justify-content-center students__inner"
+      >
+      </div>
+    </div>
+  </section>
+</main>
+<footer></footer>
+<script defer>
+  const state = {
+    students: [
+      {
+        name: "Айдарханов Амир Аянулы",
+        studentGroup: "VTT",
+      },
+      {
+        name: "Аскербек Сымбат Ерболұлы",
+        studentGroup: "VT",
+      },
+      {
+        name: "Байтуяқов Сұлтан Орынбасарұлы",
+        studentGroup: "VT",
+      },
+      {
+        name: "Белоусов Ярослав Алексеевич",
+        studentGroup: "VT",
+      },
+      {
+        name: "Блюмберов Денис Александрович",
+        studentGroup: "VT",
+      },
+      {
+        name: "Вайс Катерина Юрьевна",
+        studentGroup: "VT",
+      },
+      {
+        name: "Вахрушева Валентина Вячеславовна",
+        studentGroup: "VT",
+      },
+      {
+        name: "Вьюгов Константин Анатольевич",
+        studentGroup: "VTT",
+      },
+      {
+        name: "Галькенов Темірлан Ерланұлы",
+        studentGroup: "VT",
+      },
+      {
+        name: "Гутов Александр Алексеевич",
+        studentGroup: "VT",
+      },
+      {
+        name: "Двуреков Дмитрий Алексеевич",
+        studentGroup: "VT",
+      },
+      {
+        name: "Ерболатқызы Нұрай",
+        studentGroup: "VT",
+      },
+      {
+        name: "Зиновьев Андрей Владимирович",
+        studentGroup: "VT",
+      },
+      {
+        name: "Кумейко Никита Александрович",
+        studentGroup: "VT",
+      },
+      {
+        name: "Кушнир Александр Евгеньевич",
+        studentGroup: "VT",
+      },
+      {
+        name: "Латышов Данил Евгеньевич",
+        studentGroup: "VT",
+      },
+      {
+        name: "Михайлов Илья Евгеньевич",
+        studentGroup: "VT",
+      },
+      {
+        name: "Мырзабеков Мадияр Асанулы",
+        studentGroup: "VT",
+      },
+      {
+        name: "Саблуков Максим Александрович",
+        studentGroup: "VT",
+      },
+      {
+        name: "Синельщиков Сергей Владимирович",
+        studentGroup: "VTT",
+      },
+      {
+        name: "Скуратов Владимир Анатольевич",
+        studentGroup: "VTT",
+      },
+      {
+        name: "Троеглазов Захар Александрович",
+        studentGroup: "VT",
+      },
+      {
+        name: "Утебаев Нурсултан Тимурович",
+        studentGroup: "VT",
+      },
+      {
+        name: "Федотов Даниил Андреевич",
+        studentGroup: "VTT",
+      },
+      {
+        name: "Чайкин Даниил Дмитриевич",
+        studentGroup: "VT",
+      },
+    ],
+  };
+  const studentsRoot = document.getElementById("jsStudents");
+  const determineGroup = (student) => {
+    switch(student.studentGroup) {
+      case "VT":
+        return '22-ВТ-1';
+      case "VTT":
+        return '23-ВТТ-1';
+      case "VTK":
+        return '22-ВТК-1';
+    }
+  }
+  const render = (obj) => {
+    const group = determineGroup(obj);
+    const item = document.createElement("div");
+    item.classList.add("col-12", "col-md-6", "col-lg-4", "col-xl-3");
+    item.innerHTML = `
+            <div class="students__card">
+              <div class="students__card-img">
+                <a class="students__card-link" href="${obj.name}(${obj.studentGroup})"></a>
+                <img
+                  src="./Блюмберов Денис Александрович(VT)/assets/img/${obj.name}.jpeg"
+                  alt="${obj.name} аватарка"
+                />
+              </div>
+              <h2 class="students__card-title">${obj.name}</h2>
+              <h3 class="students__card-text">
+                Студент группы ${group}
+              </h3>
+            </div>`;
+    return item;
+  };
+  const fragment = document.createDocumentFragment();
+  state.students.forEach((student) => {
+    fragment.appendChild(render(student));
+  });
+  jsStudents.appendChild(fragment);
+</script>
+</body>
+</html>
