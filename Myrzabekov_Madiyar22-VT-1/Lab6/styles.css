@@ -59,6 +59,10 @@ main{
 .about_me_img_col{
     align-items: end;
     text-align: center;
+    z-index: -1;
+}
+.about_me_text{
+  z-index: -1;
 }
 .ssilka{
     text-decoration: none;
@@ -149,16 +153,22 @@ main{
 .menu-btn span:nth-of-type(3) {
     top: calc(50% + 5px);
 }
+@media screen and(min-width:992px){
+    .menu-btn{
+      transform: translateX(100%);
+    }
+}
 .menu {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 20%;
     height: 100%;
     padding: 15px;
     background-color: darkgray;
     transform: translateX(-100%);
     transition: transform 0.5s;
+    text-decoration: none;
 }
 
 .menu.active {
