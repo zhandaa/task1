@@ -1,0 +1,25 @@
+.falling {
+  width: 70%;
+  height: 500px;
+  position: relative;
+  background-image: url("https://th.bing.com/th/id/R.f8eb593de21a15b17f9ba13b19c15dde?rik=DmRnkLCDZyAPfg&riu=http%3a%2f%2ffiles.vividscreen.info%2fsoft%2fd364cf671c14057a0d8eff542f37767f%2fChristmas-near-Fireplace-1920x1200.jpg&ehk=MH0IbiiTbLUmM1FqYYVoMt8aFIb8kOwcWD%2bcTYV1b%2f0%3d&risl=&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-position: center center;
+  margin: 10px 0 20px 0;
+  justify-content: center;
+  border-radius: 50px;
+}
+.falling canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  mix-blend-mode: color-dodge;
+}
+.falling h2 {
+  padding: 40px;
+  background: rgba(255,255,255,0.3);
+  position: relative;
+  z-index: 2;
+}

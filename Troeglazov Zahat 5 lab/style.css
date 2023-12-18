@@ -1,0 +1,130 @@
+@media all {
+    body {
+        font-family: "Book Antiqua", sans-serif;
+        background-color: #a6a6a6;
+        font-size: 20px;
+    }
+    /* Анимация пролистывания */
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    .container-fluid {
+        animation: slideIn 1s ease-out;
+    }
+
+    .container-fluid {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: black;
+        background: aliceblue;
+    }
+
+
+    h3, h4, h5, h6 {
+        color: black;
+    }
+
+    img {
+        text-align: center;
+        border-radius: 40%;
+        width: 400px;
+        height: 400px;
+    }
+
+    .me {
+        margin-bottom: 20px;
+    }
+
+    .col-md-5 {
+        margin-bottom: 20px;
+    }
+
+    .li {
+        font-family: 'Book Antiqua', sans-serif;
+    }
+
+    .me p {
+        margin: 5px 0;
+        color: black;
+    }
+
+    .me, .col-md-5 {
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .me h1, .me h4, .me h5, .me h6, .me h7, .me h8 {
+        color: #007bff;
+        font-size: 30px;
+        font-family: 'Book Antiqua', sans-serif;
+    }
+
+
+    .me p {
+        margin: 5px 0;
+        color: black;
+    }
+
+    .col-md-6 h1 {
+        color: black;
+    }
+
+    .col-md-6 ul {
+        margin-top: 10px;
+    }
+
+    .col-md-6 h2 {
+        color: #007bff;
+        font-family: 'Book Antiqua', sans-serif;
+        font-size: 30px;
+    }
+
+    .col-md-6 ul li {
+        margin-bottom: 2px;
+    }
+
+    .col-md-5 hr {
+        border: 0;
+        border-top: 1px solid black;
+    }
+
+    .col-md-6 hr.me-4 {
+        border-color: black;
+    }
+
+    #Prof, #name {
+        color: black;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Book Antiqua", sans-serif;
+    }
+
+    .center-text {
+        font-family: "Book Antiqua", sans-serif;
+        text-align: center;
+        font-size: 25px;
+        background: aliceblue;
+
+
+    }
+}
