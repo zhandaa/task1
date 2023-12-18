@@ -1,0 +1,139 @@
+; solution.js
+; Напишите программу, которая берет исходное количество евро, записанное в константу eurosCount, переводит евро в доллары и выводит на экран. Затем полученное значение переводит в рубли и выводит на новой строчке.
+
+; Пример вывода для 100 евро:
+
+; 125
+; 7500
+; Считаем, что:
+
+; 1 евро = 1.25 долларов
+; 1 доллар = 60 рублей
+
+// @ts-check
+/* eslint-disable no-console */
+
+const eurosCount = 100;
+
+const dollarsCount = eurosCount * 1.25;
+
+console.log(dollarsCount);
+
+const rublesCount = dollarsCount * 60;
+
+
+console.log(rublesCount);
+// BEGIN (write your solution here)
+
+// END
+
+; 2. solution.js
+; Выведите на экран первую и последнюю буквы предложения, записанного в константу text, в следующем формате:
+
+; First: N
+; Last: t
+; Постарайтесь создать только одну константу, в которую сразу запишется нужный текст перед печатью на экран. В этом уроке мы отрабатываем умение собирать составное выражение. 
+
+// @ts-check
+/* eslint-disable no-console */
+
+import length from './src/string.js';
+
+const text = 'Never forget what you are, for surely the world will not';
+
+const firstLetter = text.charAt(0);
+
+const lastLetter = text.charAt(text.length - 1);
+
+console.log(`First: ${firstLetter}`);
+
+console.log(`Last: ${lastLetter}`);
+// BEGIN (write your solution here)
+
+// END
+
+; 3. solution.js
+; Оператор typeof позволяет определить тип передаваемого операнда. Название типа возвращается в виде строки. Например, вызов typeof 'go go go' вернёт строку 'string' (number — число).
+
+; console.log(typeof 3); // => 'number'
+; Выведите на экран тип значения константы motto.
+
+// @ts-check
+/* eslint-disable no-console */
+
+const motto = 'Family, Duty, Honor';
+
+console.log(typeof motto);
+// BEGIN (write your solution here)
+
+// END
+
+; 4.  getHiddenCard.js
+; Реализуйте функцию getHiddenCard(), который принимает на вход номер кредитки (состоящий из 16 цифр) в виде строки и возвращает его скрытую версию, которая может использоваться на сайте для отображения. Если исходная карта имела номер 2034399002125581, то скрытая версия выглядит так ****5581. Другими словами, функция заменяет первые 12 символов, на звездочки. Количество звездочек регулируется вторым необязательным параметром. Значение по умолчанию — 4.
+
+; // Кредитка передается внутрь как строка
+; getHiddenCard('1234567812345678', 2); // "**5678"
+; getHiddenCard('1234567812345678', 3); // "***5678"
+; getHiddenCard('1234567812345678');    // "****5678"
+; getHiddenCard('2034399002121100', 1); // "*1100"
+; Для выполнения задания вам понадобится метод строки repeat(), который повторяет строку указанное количество раз
+
+; '+'.repeat(5); // "+++++"
+; 'o'.repeat(3); // "ooo"
+
+// BEGIN (write your solution here)
+
+const getHiddenCard = (creditCardNumber, numStars = 4) => {
+  const stars = '*'.repeat(numStars);
+  const lastDigits = creditCardNumber.slice(-4);
+  return `${stars}${lastDigits}`;
+};
+
+// Примеры использования
+console.log(getHiddenCard('1234567812345678', 2)); // "**5678"
+console.log(getHiddenCard('1234567812345678', 3)); // "***5678"
+console.log(getHiddenCard('1234567812345678'));    // "****5678"
+console.log(getHiddenCard('2034399002121100', 1)); // "*1100"
+
+// END
+
+export default getHiddenCard;
+
+; 5. convertText.js
+; Реализуйте функцию convertText(), которая принимает на вход строку и, если первая буква не заглавная, возвращает перевернутый вариант исходной строки. Если первая буква заглавная, то строка возвращается без изменений. Если на вход передана пустая строка, функция должна вернуть пустую строку.
+
+; Примеры вызова:
+
+; convertText('Hello'); // 'Hello'
+; convertText('hello'); // 'olleh'
+ 
+; // Не забудьте учесть пустую строку
+; convertText(''); // ''
+; Перевернуть строчку можно используя функцию reverse(). В качестве аргумента в неё нужно передать строку, которую мы хотим перевернуть:
+
+; const result = reverse('Hello!');
+; console.log(result); // => '!olleH'
+
+; import reverse from './reverse';
+
+// BEGIN (write your solution here)
+const convertText = (text) => {
+  if (text.length === 0) {
+    return '';
+  }
+
+  if (text[0] === text[0].toUpperCase()) {
+    return text;
+  } else {
+    return text.split('').reverse().join('');
+  }
+};
+
+console.log(convertText('Hello')); // 'Hello'
+console.log(convertText('hello')); // 'olleh'
+console.log(convertText(''));      // ''
+
+// END
+
+export default convertText;
+
