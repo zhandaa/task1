@@ -1,113 +1,277 @@
-
-@media all {
 body {
-    
-    padding: 0 10% 4% 10%;
-    font-family: Rubik, Arial, sans-serif;}
-    a:link {font-weight: bold;}
-    a:visited {color: hsl(75,100%,40%);}
-    
-     h1 {
-       background: black;
-       color: white;
-       margin-bottom: 0px;
-       padding: 6px 18px;
-       font-size: 1em;}
-     h3 {
-       font-size: 1.6em;
-       margin-top: 0; margin-bottom: 10px;
-       font-family: Spectral, "Arial Black", sans-serif;}
-     h4 {
-       margin-top: 10px; margin-bottom: 10px;
-       font-size: 1em;}
-     h5 {
-       font-style: italic;
-       font-weight: 400;
-       font-size:0.9em;
-       margin-top:5px;
-    }
-      
-     #name {
-       font-size: 2.8em; font-weight: 900;
-       margin-top: 15px; margin-bottom:15px;
-       line-height: 100%;
-       font-family: Spectral, "Arial Black", sans-serif;
-       }
-    
-     #jobTitle {
-       font-size: 1em; font-weight: 400;
-       font-family: Rubik;}
+  padding: 0 5%;
+  font-family: 'Rubik', Arial, sans-serif;
+}
 
-    
+h1 {
+  background: black;
+  color: white;
+  margin-bottom: 0;
+  padding: 6px 18px;
+  font-size: 1.5em;
+}
 
-    .flex-container {
-      display: flex;}
-    
- 
-     #left {
-      width: 30%;
-      box-sizing: border-box;
-      background: hsl(0,0%, 90%);
-      text-align: center;}
-    
+h3 {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 
-     div div div {
-      position: relative;
-      border: 2px hsl(0, 0%, 0%) solid;
-      box-sizing: border-box;
-      width: 60%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 55px;
-      margin-bottom: 30px;
-      min-height: 250px;
-      padding-bottom: 4%;
-      z-index: 0;}
-    
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
 
-     div div div h3 {
-      position: absolute;
-      top: -8%;
-      right: 20%;
-      left: 20%;
-      z-index: 1;
-      text-align: center;
-      background: hsl(0,0%, 90%);} 
-    
-    div div div h4 {
-      margin-top: 10%;}
-    div div div p {
-      margin-top: 2%;
-      font-size: 1em;}
-    
+h5 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
 
-    #right {
-      width: 70%;
-      box-sizing: border-box;
-      padding: 50px 5%;
-      margin: 0;
-    }
-    
+h6 {
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
 
-    img {
-      width: 33%;
-      display: block;
-      margin-top: 50px;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 50%;
-      border: 2px black solid;
-      }
+.container-fluid {
+  padding-right: 5%;
+  padding-left: 5%;
+}
 
-    hr {
-      display:block;
-      background-color: black;
-      text-align:center;
-    }
-    /* short line under the 'marketing manager' in the left column */
-    #mainHR {
-      width: 25%;
-      border: 2px solid black;
-      margin-top: 20px;
-    }
+@media (min-width: 768px) {
+  .container-fluid {
+      max-width: 720px;
+  }
+
+  .col-md-6 {
+      flex: 0 0 48%;
+      max-width: 48%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-fluid {
+      max-width: 960px;
+  }
+
+  .col-md-6 {
+      flex: 0 0 48%;
+      max-width: 48%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+      max-width: 1140px;
+  }
+
+  .col-md-6 {
+      flex: 0 0 48%;
+      max-width: 48%;
+  }
+}
+
+img {
+  width: 50%;
+  max-width: 150px;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 2px black solid;
+}
+
+hr {
+  display: block;
+  background-color: black;
+  text-align: center;
+}
+
+.contact-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #000000;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 6px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form .btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .contact-form .form-control {
+      width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .col-md-6 {
+      flex: 0 0 48%;
+      max-width: 48%;
+  }
+
+  .contact-form .form-control {
+      width: 48%;
+  }
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.container-fluid {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2 {
+  color: #343a40;
+}
+
+h3,
+h6,
+.contact-form label {
+  color: #000000;
+}
+
+h4,
+h5,
+ul.funky li,
+.contact-form .btn-primary {
+  color: #000000;
+}
+
+img {
+  border: 3px solid #000000;
+}
+
+hr {
+  background-color: rgb(0, 0, 0);
+}
+
+.contact-form {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #000000;
+}
+
+.contact-form .btn-primary {
+  background-color: rgb(0, 0, 0);
+  color: #f1f1f1
+}
+
+.funky {
+  color: #000000;
+}
+
+ul.funky {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.funky li {
+  margin-bottom: 5px;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  margin-top: 40px;
+}
+body {
+  padding: 0 5%;
+  font-family: 'Rubik', Arial, sans-serif;
+  word-wrap: break-word; 
+}
+
+h1, h2, h3, h4, h5, h6, .contact-form label, ul.funky li {
+  word-wrap: break-word; 
+}
+
+@media (max-width: 767px) {
+  
+  h1, h2, h3, h4, h5, h6, .contact-form label, ul.funky li {
+    width: 100%;
+  }
+}
+.answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s;
+}
+
+.faq-item.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+.faq-item.active svg {
+  transform: rotate(-90deg);
+  transition: transform 0.5s ease-in; 
+}
+svg {
+  transition: transofrm 0.5s ease-in;
+}
+.faq {
+  border-bottom: solid 1px;
+}
+@keyframes fade {
+  from {
+  opacity: 0;
+  transform: translateY(-10px);
+  to {
+  opacity: 1;
+  transform: translateY(0px); }
+  }
 }
