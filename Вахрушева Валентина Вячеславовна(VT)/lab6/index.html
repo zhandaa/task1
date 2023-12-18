@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мой личный сайт</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/slider.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="simple-adaptive-slider.css">
+</head> 
+<body>
+    <div class="main">
+            <header class="container" background="https://mirpps.ru/assets/media/fon-dlja-prezentacii/0066.jpg">
+                <div class="logo-menu row flex-md-row">
+                    <div class="logos col"><img src="/assets/img/logo.png" width="150px" height="90px"></div>
+                    <nav class="flex-column flex-sm-row row">
+                            <div class="col"><a href="#catalog">Catalog</a></div>
+                            <div class="col"><a href="#about-me">AboutMe</a></div>
+                            <div class="col"><a href="#footer-code">WriteMe</a></div>
+                            <div class="col"><a href="#form">SendAcomment</a></div>
+                    </nav>
+                </div>
+            </header>
+            <div class="slider container">
+                <div class="slideshow">
+                    <div class="slideshow-item">
+                        <img src="/assets/img/photo-1.jpg" alt="">
+                        <div class="slideshow-item-text">
+                            <h5>Joseph Joubert</h5>
+                            <p>Writing is closer to thinking than to speaking.</p>
+                        </div>
+                    </div>
+                    <div class="slideshow-item">
+                        <img src="/assets/img/photo-2.jpeg" alt="">
+                        <div class="slideshow-item-text">
+                            <h5>Jonathan Swift</h5>
+                            <p>Proper words in proper places make the true definition of a style.</p>
+                        </div>
+                    </div>
+                    <div class="slideshow-item">
+                        <img src="/assets/img/photo-3.jpg" alt="">
+                        <div class="slideshow-item-text">
+                            <h5>Pablo Picasso</h5>
+                            <p>He can who thinks he can, and he can`t who thinks he can`t. This is an inexorable, indisputable law.</p>
+                        </div>
+                    </div>
+                    <div class="slideshow-item">
+                        <img src="/assets/img/photo-4.jpeg" alt="">
+                        <div class="slideshow-item-text">
+                            <h5>Antoine de Saint-Exupery</h5>
+                            <p>A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.</p>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-me container" id="about-me">
+                <div class="foto-text flex-column flex-md-row row">
+                    <div class="my-foto col"><img src="/assets/img/me.jpg"></div><br>
+                    <div class="info-about-me col"><div><h1>About me</h1></div><br><div><p>I was born on September 17, 2004. I graduated from high school with a red certificate and entered the university. I am a student of EKTU. I am studying for the specialty Computer Engineering and Software. I like to read and to drow. I would like to make the site with using HTML and CSS.</p></div></div>
+                </div>
+            </div>
+            <div class="my-skills container">
+                <div class="skills flex-column flex-md-row row">
+                    <div class="col">
+                    <div><h1>My skills</h1></div><br>
+                    <ul>
+                        <li>Writing an article</li>
+                        <li>PR</li>
+                        <li>Marketing</li>
+                        <li>Blog promotion in the Internet</li>
+                    </ul>
+                    </div>
+                    <div class="photo-skill col">
+                        <img src="/assets/img/marketing.webp" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="me">
+                <div id="dataContainer" style="margin-top: 100px;"></div>
+                <button id="btnGetData" class="button">Получить данные</button>
+            </div>
+            <div class="catalog container" id="catalog">
+                <h1>My Catalog for you</h1><br>
+                <div class="catalogs row">
+                    <div class="col"><img src="/assets/img/logos.png" width="90px" height="90px">Write an article</div>
+                    <div class="col"><img src="/assets/img/logos.png" width="90px" height="90px">Advertising on social networks</div>
+                    <div class="col"><img src="/assets/img/logos.png" width="90px" height="90px">Drawing up an individual plan for promoting a blog on the Internet</div>
+                </div>
+            </div>
+            <div id="form" class="form container">
+                <h1>Fill the form</h1><br><br>
+                <form class="my-form flex-column row" action="#">
+                    <label for="name" class="col">
+                        <input id="name" name="name"placeholder="Your name" type="text">
+                    </label>
+                    <label for="email" class="col">
+                        <input id="email" name="email" placeholder="Your e-mail">
+                    </label>
+                    <br>
+                    <label for="comment" class="col">
+                        <textarea id="comment" placeholder="Write the comment" type="text" rows="4" cols="10"></textarea>
+                    </label><br>
+                    <button class="btn" type="submit">Submit</button>
+                </form>
+            </div>
+            <footer id="footer-code" class="container">
+                <div class="footer row">
+                    <div class="text col">Vakhrusheva Valentina<br><br>&#xa9; 2023. Ust-Kamenogorsk</div>
+                    <div class="phone-numbers col">My contacts<br><br>+77779958605<br><br>+77077487540<br><br>vakhrusheva3009@gmail.com<br><br><a href="/lab6/site-1.html">New Year Version</a></div>
+                    <div class="internet col">
+                        <div><a href="https://instagram.com/alya_3v?igshid=OGQ5ZDc2ODk2ZA=="><img src="https://www.freepngimg.com/thumb/instagram/118546-logo-instagram-free-hd-image.png" width="100px" height="100px"></a></div>
+                        <div><a href="https://www.facebook.com/profile.php?id=100090167869355&mibextid=2JQ9oc"><img src="https://i.pinimg.com/originals/3e/6b/19/3e6b19b0a0564d7584995dc72d84b41b.png" width="100px" height="100px"></a></div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   
+    <script src="/script.js"></script>
+</body>
+</html>
