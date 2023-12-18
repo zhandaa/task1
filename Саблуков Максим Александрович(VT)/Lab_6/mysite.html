@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_6</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet" >
+    <link href="https: //fonts.googleapis.com/css2?family= Montserrat:ital,wght@0,300;0,400 ; 0,700;1,300 & display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Header-->
+    <header class="header">
+        <div id="Main" class="container">
+            <div class="header__inner">
+                <div class="user d-flex align-items-center">
+                    <div class="user__avatar img">
+                        <img src="image/1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="user__content ms-3">
+                        <div class="user__name">
+                            Sablukov <br> Maksim 
+                        </div>
+                        <div class="user__prof">Student EKTU</div>
+                    </div>
+                </div>
+                <nav class="nav navbar">
+                    <ul class="nav  navbar-righ">
+                    <li><a class="nav__link" href="#Main">Main</a></li>
+                    <li><a class="nav__link" href="#about">About me</a></li>
+                    <li><a class="nav__link" href="#Projects">Projects</a></li>
+                    <li><a class="nav__link" href="#Contacts">Contacts</a></li>
+                    <a class="btn" href="#" data-modal="#modal_hire_me">WRITE ME</a>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- intro -->
+    <div class="block">
+        <section class="intro">
+            <div class="container">
+                <div class="intro__inner row align-items-center">
+                    <div class="col-md-6">
+                        <div class="intro__content ">
+                            <h2 class="intro__subtitle">Hello I'm</h2>
+                            <h1 class="intro__title">Sablukov Maksim</h1>
+                            <div class="intro__text">Student EKTU</div>
+                            
+                            <div class="social ">
+                                <a class="social__link img" href="#">
+                                    <img src="image/vk.png" alt="">
+                                </a>
+                                <a class="social__link img" href="#">
+                                  <img src="image/inst.png" alt="">
+                                </a>
+                                <a class="social__link img" href="#">
+                                    <img src="image/telegram.png" alt="">
+                                </a>
+                                <a class="social__link img" href="#">
+                                    <img src="image/facebook.png" alt="">
+                                </a>
+                            </div>
+                            <a class="btn" href="#" data-modal="#modal_hire_me">WRITE ME</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="image/2.png" class="intro__photo image-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="about__inner">
+        <div class="row">
+          <div class="about__photo img col-md-6">
+            <img src="image/5.png" alt="Изображение" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <div class="about__content">
+              <h3 class="about__title">About Me</h3>
+              <h2 class="about__bigtitle">Who I Am</h2>
+              <div class="about__text">
+                <p>Striving to develop in the field of programming and apply my skills to create innovative solutions.</p>
+                <p>Familiar with web application development, including HTML, CSS, and ready to work on frontend and backend development.</p>
+                <p>I am focused on reaching new heights and creating quality web applications that will amaze and ease the lives of users.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<!--Skills-->
+<div class="container">
+    <div class="row">
+        <div class="Skills col-md-3">
+            <div class="block__Skills">
+                <div class="imageSkills">
+                    <img src="image/c-sharp.png" alt="c#">
+                </div>
+                <div class="descriptionSkills">
+                    <h3 class="countSkills">5+</h3>
+                    <p class="nameSkills">Progect</p>
+                </div>
+            </div>
+        </div>
+        <div class="Skills col-md-3"> 
+            <div class="block__Skills">
+                <div class="imageSkills">
+                    <img src="image/blender.png" alt="blender">
+                </div>
+                <div class="descriptionSkills">
+                    <h3 class="countSkills">50+</h3>
+                    <p class="nameSkills">hours</p>
+                </div>
+            </div>
+        </div>
+        <div class="Skills col-md-3">
+            <div class="block__Skills">
+                <div class="imageSkills">
+                    <img src="image/java-script.png" alt="JavaScript">
+                </div>
+                <div class="descriptionSkills">
+                    <h3 class="countSkills">2+</h3>
+                    <p class="nameSkills">projects</p>
+                </div>
+            </div>
+        </div>
+        <div class="Skills col-md-3">
+            <div class="block__Skills">
+                <div class="imageSkills">
+                    <img src="image/photoshop.png" alt="photoshop">
+                </div>
+                <div class="descriptionSkills">
+                    <h3 class="countSkills">20+</h3>
+                    <p class="nameSkills">projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Projects-->
+
+<div id="Projects" class="works">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="portfolio row" id="portfolio">
+                    <div class="portfolio__col col-4">
+                        <div class="work" data-modal="#modal_project_1">
+
+                                <img class="work__image" src="image/6.png" alt="">
+                            </a>
+                            <div class="work__content">
+                                <div class="work__cat">category: WEBSITE</div>
+                                <div class="work__title">
+                                    Project title
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__col col-4">
+                        <div class="work">
+                            <img class="work__image" src="image/7.png" alt="">
+                            <div class="work__content">
+                                <div class="work__cat">category: website</div>
+                                <div class="work__title">
+                                    Project title
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__col col-4">
+                        <div class="work">
+                            <img class="work__image" src="image/css.png" alt="">
+                            <div class="work__content">
+                                <div class="work__cat">category: website</div>
+                                <div class="work__title">
+                                    Project title
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--footer-->
+<footer class="footer">
+    <div id="Contacts" class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer__inner">
+                    <div class="footer__credits">
+                        <div class="footer__copyright">
+                            <h3>Sablukov Maksim</h3>
+                            <p>(c)2023. All rights depend.</p>
+                        </div>
+                        <div class="footer__social ">
+                            <a class="footer__link" href="#">
+                                <img src="image/vk.png" alt="">
+                            </a>
+                            <a class="footer__link" href="#">
+                                <img src="image/inst.png" alt="">
+                            </a>
+                            <a class="footer__link" href="https://t.me/Serafim16x">
+                                <img src="image/telegram.png" alt="">
+                            </a>
+                            <a class="footer__link" href="#">
+                                <img src="image/8.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="nav navbar nav navbar-righ footer__nav">
+                        <a class="footer__nav-link" href="#Main">MAIN</a>
+                        <a class="footer__nav-link" href="#about">ABOUT ME</a>
+                        <a class="footer__nav-link" href="#Progect">Project</a>
+                        <a class="footer__nav-link" href="#Contact">Contact</a>
+                        <a class="footer__nav-link" href="#" data-modal="#modal_hire_me">WRITE ME</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--Modal-->
+<div class="modal fade" id="modal_hire_me" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal__dialog ">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <button class="modal__close" type="button" data-close>
+                    <img src="./image/9.png" class="modal__close img-fluid" alt="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modal-title">LET'S TALK!</h3>
+              <h4 class="modal-subtitle">CALL ME OR SEND ME A REQUEST</h4>
+              <div class="form__group mb-3">
+                <form class="telegram-form">
+                </div>
+                <div class="form__group mb-3">
+                      <label for="input-name" class="form-label">Your Name</label>
+                      <input type="text" class="form-control form__group mb-3" id="input-name" name="name" placeholder="Your Name" autocomplete="off"/>
+                  </div>
+                  <div class="form__group mb-3">
+                      <label for="input-phone" class="form-label">Phone number</label>
+                      <input type="text" class="form-control" id="input-phone" name="Phone" placeholder="Phone number" autocomplete="off" />
+                  </div>
+                  <div class="form__group mb-3">
+                      <label for="input-email" class="form-label">Address e-mail</label>
+                      <input type="text" class="form-control" id="input-email" name="email" placeholder="Address e-mail" autocomplete="off"/>
+                  </div>
+                  <div class="form__group mb-3">
+                      <label for="input-text" class="form-label">Request</label>
+                      <textarea class="form-control form__textarea" id="input-text" name="text" placeholder="Type your request..." ></textarea>
+                  </div>
+                  <div class="work__title">
+                      <button class="btn" id="submit">SEND</button>
+                  </div>
+              </form>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="modal-message"></p>
+        </div>
+  </div>
+  </div>
+        </div>
+      </div>
+    </section>
+
+<!--JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/main.js"></script>
+<script src="js/click.js"></script>
+
+</body>
+</html>
+

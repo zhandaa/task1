@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin:0 auto;
+    font-family:Roboto sans-serif ;
+}
+   header {
+        padding: 2% 0;
+        font-size: 16px;
+        font-weight: 400;
+    }
+   .header {
+    display: flex;
+    flex-direction: row;
+}
+    .logo {
+        align-items: center;
+    }
+    .logo img {
+        width: 25%;
+        height: auto;
+    }
+    .nav-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .nav-block_item {
+        display: inline;
+        vertical-align: middle;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        background: lightgray;
+        border-radius: 10px;
+    }
+    .nav-block_item:hover {
+        color: #007bff;
+    }
+    .main-section {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5%;
+        padding-top:5%;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    .descriptionText h1 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+    .main-section_descr p {
+        font-size: 18px;
+    }
+    .main-section__btn {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    .main-section__btn:hover {
+        background-color: #0056b3;
+    }
+.aboutme-section {
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutme-section_content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+    .aboutme-section_content h2, .aboutme-section_content p{
+        text-align: center;
+    }
+    .навыки_фото {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .навыки {
+        text-align: left;
+    }
+    .me\.png {
+        border-radius: 60px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .aboutme-section_content p {
+        font-size: 18px;
+    }
+    .навыки h2 {
+        margin-top: 20px;
+        align-items: center;
+    }
+    .work-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 5%;
+        padding-top:5%;
+        margin: 0 auto;
+    }
+    .dog\.png{
+        max-width: 100%;
+        height: auto;
+        border-radius: 100px;
+    }
+    .sport-section {
+        display: flex;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+        iframe {
+            width: 100%;
+            height: 315px;
+            margin: 0 auto;
+        }
+.sport-section_content{
+    margin: 0 auto;
+}
+
+
+/* Бургер и бургер-меню */
+.burger-menu {
+    display: none; /* по умолчанию скрыто на больших экранах */
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.burger-nav {
+    display: none; /* по умолчанию скрыто на больших экранах */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    flex-direction: column;
+    background-color:white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.burger-nav_item {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.burger-nav_item:hover {
+    color: #f00;
+}
+
+/* Показывать бургер-меню на маленьких экранах */
+@media only screen and (max-width: 992px) {
+    .nav-block {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .burger-nav {
+        display: flex;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-decoration: none;
+    color: white;
+    background-color: #34547A;
+    width: fit-content;
+    padding: 5px 10px;
+    min-height:45px;
+    transition: transform .2s ease-in-out;
+    border:none;
+    transition: all .4s ease;
+}
+.button:hover {
+    color: #34547A;
+    background-color:  white;
+    box-shadow: 0px 2px 5px 2px rgba(34, 60, 80, 0.2);
+
+}
+footer {
+    background-color: #34547A;
+    color: white;
+    padding: 50px 0;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer__content p {
+    margin-bottom: 0;
+}
+.footer__social {
+    display: flex;
+    align-items: center;
+    min-height: 45px;
+    gap: 20px;
+}
+
